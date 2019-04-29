@@ -93,8 +93,8 @@ public class CustomListeners extends TestBase implements ITestListener,ISuiteLis
 		MonitoringMail mail = new MonitoringMail();
 		 
 		try {
-			messageBody = "http://" + InetAddress.getLocalHost().getHostAddress()
-					+ ":8080/job/DataDrivenLiveProject/Extent_Reports/";
+			//messageBody = "http://" + InetAddress.getLocalHost().getHostAddress() + ":8080/job/DataDrivenLiveProject/Extent_Reports/";
+			messageBody = "http://" + InetAddress.getLocalHost().getHostAddress() + ":8080/job/smoke_test/Extent_20Report/";
 		} catch (UnknownHostException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

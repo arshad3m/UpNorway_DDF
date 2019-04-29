@@ -4,10 +4,10 @@ public class TestConfig{
 
 	
 	public static String server="smtp.gmail.com";
-	public static String from = "arshad.lk@gmail.com2";
+	public static String from = "arshad.lk@gmail.com";
 	public static String password = "tingba";
-	public static String[] to ={"arshad3m@gmail.com"};
-	public static String subject = "Extent Project Report";
+	public static String[] to ={"arshadm@99x.lk"};
+	public static String subject = "Up Norway Smoke Test Report";
 	
 	public static String messageBody ="TestMessage";
 	public static String attachmentPath="c:\\screenshot\\2017_10_3_14_49_9.jpg";
