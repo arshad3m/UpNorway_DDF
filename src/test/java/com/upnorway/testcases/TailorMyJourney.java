@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.openqa.selenium.By;
 import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
 import com.upnorway.base.TestBase;
 
@@ -46,7 +47,7 @@ public class TailorMyJourney extends TestBase {
 
 	}
 
-	// @Test
+	@Test (enabled=false)
 	@Parameters({ "firstname", "lastname", "age", "email", "phone", "arrivaldate", "lengthofthetrip", "occupation",
 			"adultscount", "travellingfrom" })
 	public void tailorMyJourney_ValidationCheck(String firstname, String lastname, String age, String email,
