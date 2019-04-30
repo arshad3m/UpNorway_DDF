@@ -22,7 +22,7 @@ public class SearchAnything extends TestBase {
 	 * @author ArshadM
 	 *Search using a keyword so that yield more than 4 results appear
 	 */
-	@Test(priority=1, enabled=false)
+	@Test(priority=1, enabled=true)
 	@Parameters({"keyword_for_many"})
 	public void search_for_many(String keyword_for_many) throws InterruptedException, IOException {
 		
