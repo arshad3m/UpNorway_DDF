@@ -56,7 +56,7 @@ public class SearchAnything extends TestBase {
 	 *Search using a keyword so that yield less than 4 results appear
 	 */
 	
-	@Test(priority=2, enabled=false)
+	@Test(priority=2, enabled=true)
 	@Parameters({"keyword_for_less"})
 	public void search_for_less(String keyword_for_less) throws InterruptedException, IOException {
 
@@ -102,7 +102,7 @@ public class SearchAnything extends TestBase {
 	 * @throws InterruptedException 
 	 */
 	
-	@Test(enabled=false)
+	@Test(enabled=true)
 	@Parameters({"keyword_for_many"})
 	public void search_Pagination(String keyword_for_many) throws IOException, InterruptedException {
 		
@@ -138,7 +138,7 @@ public class SearchAnything extends TestBase {
 	 * @throws InterruptedException 
 	 */
 	
-	@Test(enabled=false)
+	@Test(enabled=true)
 	@Parameters({"keyword_invalid"})
 	public void search_With_Invalid_Keyword(String keyword_invalid) throws IOException, InterruptedException {
 		
@@ -166,7 +166,7 @@ public class SearchAnything extends TestBase {
 	 * @throws InterruptedException 
 	 */
 	
-	@Test (enabled=false)
+	@Test (enabled=true)
 	@Parameters({"keyword_for_many"})
 	public void navigate_Pagination(String keyword_for_many) throws IOException, InterruptedException {
 		
