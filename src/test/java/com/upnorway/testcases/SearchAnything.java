@@ -15,7 +15,6 @@ import com.upnorway.base.TestBase;
 import com.upnorway.utilities.TestUtil;
 
 
-
 public class SearchAnything extends TestBase {
 
 	/**
@@ -138,7 +137,7 @@ public class SearchAnything extends TestBase {
 	 * @throws InterruptedException 
 	 */
 	
-	@Test(enabled=true)
+	@Test(enabled=false)
 	@Parameters({"keyword_invalid"})
 	public void search_With_Invalid_Keyword(String keyword_invalid) throws IOException, InterruptedException {
 		

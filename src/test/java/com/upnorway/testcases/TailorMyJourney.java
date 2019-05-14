@@ -47,7 +47,7 @@ public class TailorMyJourney extends TestBase {
 
 	}
 
-	@Test (enabled=true)
+	@Test (enabled=false)
 	@Parameters({ "firstname", "lastname", "age", "email", "phone", "arrivaldate", "lengthofthetrip", "occupation",
 			"adultscount", "travellingfrom" })
 	public void tailorMyJourney_ValidationCheck(String firstname, String lastname, String age, String email,

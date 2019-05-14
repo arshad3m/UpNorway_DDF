@@ -23,24 +23,22 @@
 		<parameter name="occupation" value="Cricketer" />
 		<parameter name="adultscount" value="9" />
 		<parameter name="travellingfrom" value="India" />
-		<parameter name="message" value="I would love to travel Norway" />
+		<parameter name="message"
+			value="I would love to travel Norway" />
 
 		<classes>
-			<class name="com.upnorway.testcases.Homepage" />
-			<class name="com.upnorway.testcases.TailorMyJourney" />
-			<class name="com.upnorway.testcases.SendEnquiry" />
-			<class name="com.upnorway.testcases.SearchAnything" />
+
 
 
 		</classes>
-		
-		
-	</test> 
-	
-	<test name="Journeys" >
-	<classes>
-	
-	</classes>
-	
+
+
+	</test>
+
+	<test name="Journeys">
+		<classes>
+			<class name="com.upnorway.testcases.Journeys" />
+		</classes>
+
 	</test>
 </suite> <!-- Suite -->
