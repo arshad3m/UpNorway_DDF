@@ -28,7 +28,10 @@
 
 		<classes>
 
-
+			<class name="com.upnorway.testcases.Homepage" />
+			<class name="com.upnorway.testcases.TailorMyJourney" />
+			<class name="com.upnorway.testcases.SendEnquiry" />
+			<class name="com.upnorway.testcases.SearchAnything" />
 
 		</classes>
 
