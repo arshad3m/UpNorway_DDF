@@ -34,6 +34,8 @@ public class Journeys extends TestBase {
 
 		// type keyword in search box
 		type("searchBox_XPATH", keyword);
+		
+		Thread.sleep(3000);
 
 		// verify results
 		String searchresultText = driver.findElement(By.xpath(OR.getProperty("searchResultText_XPATH"))).getText();
@@ -91,16 +93,20 @@ public class Journeys extends TestBase {
 	 *            result 5. Open the 6th result 6. Verify correct result is opened
 	 * 
 	 * @throws IOException
+	 * @throws InterruptedException 
 	 */
 	@Test(enabled = true)
 	@Parameters({ "keyword2","fname","lname","email","mobile","from","count" })
-	public void journey_enquire(String keyword, String fname,String lname,String email, String mobile,String from, String count) throws IOException {
+	public void journey_enquire(String keyword, String fname,String lname,String email, String mobile,String from, String count) throws IOException, InterruptedException {
 
 		// Go to journeys
 		click("journeysBtn_XPATH");
 
 		// type keyword in search box
 		type("searchBox_XPATH", keyword);
+		
+		Thread.sleep(3000);
+
 		
 		try {
 			List<WebElement> cards = driver.findElements(By.xpath(OR.getProperty("jourenyCards_XPATH")));
