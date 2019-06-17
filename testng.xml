@@ -13,16 +13,16 @@
 		<parameter name="keyword_for_less" value="drifting" />
 		<parameter name="keyword_for_many" value="summer" />
 		<parameter name="keyword_invalid" value="abcdxyg987" />
-		<parameter name="firstname" value="Virat" />
-		<parameter name="lastname" value="Kohli" />
+		<parameter name="firstname" value="Kane" />
+		<parameter name="lastname" value="Williamson" />
 		<parameter name="age" value="34 years young" />
-		<parameter name="email" value="virat@bcci.in" />
+		<parameter name="email" value="kane@cricket.nz" />
 		<parameter name="phone" value="0097444667" />
 		<parameter name="arrivaldate" value="31st of December 2030" />
 		<parameter name="lengthofthetrip" value="4" />
 		<parameter name="occupation" value="Cricketer" />
 		<parameter name="adultscount" value="9" />
-		<parameter name="travellingfrom" value="India" />
+		<parameter name="travellingfrom" value="New Zealand" />
 		<parameter name="message"
 			value="I would love to travel Norway" />
 
