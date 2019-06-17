@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Parameters;
@@ -102,10 +103,11 @@ public class Journeys extends TestBase {
 		// Go to journeys
 		click("journeysBtn_XPATH");
 
+		Thread.sleep(3000);
+
 		// type keyword in search box
 		type("searchBox_XPATH", keyword);
 		
-		Thread.sleep(3000);
 
 		
 		try {
