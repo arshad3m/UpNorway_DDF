@@ -92,13 +92,9 @@ public class CustomListeners extends TestBase implements ITestListener,ISuiteLis
 		
 		MonitoringMail mail = new MonitoringMail();
 		 
-		try {
-			//messageBody = "http://" + InetAddress.getLocalHost().getHostAddress() + ":8080/job/DataDrivenLiveProject/Extent_Reports/";
-			messageBody = "http://" + InetAddress.getLocalHost().getHostAddress() + ":8080/job/smoke_test/Extent_20Report/";
-		} catch (UnknownHostException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		//messageBody = "http://" + InetAddress.getLocalHost().getHostAddress() + ":8080/job/DataDrivenLiveProject/Extent_Reports/";
+		//messageBody = "http://" + InetAddress.getLocalHost().getHostAddress() + ":8080/job/smoke_test/Extent_20Report/";
+		messageBody="https://jenkins.upnorway.net/job/Smoke_test/Extent_20Report/";
 	
 		try {
 			mail.sendMail(TestConfig.server, TestConfig.from, TestConfig.to, TestConfig.subject, messageBody);
