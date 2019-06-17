@@ -47,7 +47,7 @@ public class TailorMyJourney extends TestBase {
 
 	}
 
-	@Test (enabled=false)
+	@Test (enabled=true)
 	@Parameters({ "firstname", "lastname", "age", "email", "phone", "arrivaldate", "lengthofthetrip", "occupation",
 			"adultscount", "travellingfrom" })
 	public void tailorMyJourney_ValidationCheck(String firstname, String lastname, String age, String email,
@@ -63,7 +63,7 @@ public class TailorMyJourney extends TestBase {
 		click("nextBtn_XPATH");
 
 		// Verify message prompting to select vacation
-		verifyEquals("Please select up to four.",
+		verifyEqualsIgnoreCase("Please select up to four.",
 				driver.findElement(By.xpath(OR.getProperty("validation_XPATH"))).getText());
 
 		// Select holiday type
@@ -77,7 +77,7 @@ public class TailorMyJourney extends TestBase {
 		click("nextBtn_XPATH");
 
 		// Verify message prompting to select season
-		verifyEquals("I think you forgot to choose a season! Please select at least one.",
+		verifyEqualsIgnoreCase("I think you forgot to choose a season! Please select at least one.",
 				driver.findElement(By.xpath(OR.getProperty("validation_XPATH"))).getText());
 
 		// Select season
@@ -90,7 +90,7 @@ public class TailorMyJourney extends TestBase {
 		click("nextBtn_XPATH");
 
 		// Verify message prompting to select interests
-		verifyEquals("Please select up to four areas of interest.",
+		verifyEqualsIgnoreCase("Please select up to four areas of interest.",
 				driver.findElement(By.xpath(OR.getProperty("validation_XPATH"))).getText());
 
 		// Select interests
@@ -103,7 +103,7 @@ public class TailorMyJourney extends TestBase {
 		click("nextBtn_XPATH");
 
 		// Verify message prompting to select accommodation
-		verifyEquals("Please limit your choice to one.",
+		verifyEqualsIgnoreCase("Please limit your choice to one.",
 				driver.findElement(By.xpath(OR.getProperty("validation_XPATH"))).getText());
 
 		// Select accommodation
@@ -116,7 +116,7 @@ public class TailorMyJourney extends TestBase {
 		click("nextBtn_XPATH");
 
 		// Verify message prompting to select transport
-		verifyEquals("Please select just one.",
+		verifyEqualsIgnoreCase("Please select just one.",
 				driver.findElement(By.xpath(OR.getProperty("validation_XPATH"))).getText());
 
 		// Select transport
@@ -126,7 +126,7 @@ public class TailorMyJourney extends TestBase {
 		click("nextBtn_XPATH");
 
 		// Verify welcome name is equal the the first name entered at the beginning
-		verifyEquals(firstname, driver.findElement(By.xpath(OR.getProperty("welcomeName_XPATH"))).getText());
+		verifyEqualsIgnoreCase(firstname, driver.findElement(By.xpath(OR.getProperty("welcomeName_XPATH"))).getText());
 
 		// Enter last name
 		type("lastName_XPATH", lastname);

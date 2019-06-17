@@ -1,13 +1,18 @@
 package com.upnorway.base;
 
+import static org.testng.Assert.assertFalse;
+import static org.testng.Assert.assertTrue;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -21,11 +26,13 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.asserts.SoftAssert;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -41,9 +48,8 @@ import com.upnorway.utilities.TestUtil;
 public class TestBase {
 
 	/*
-	 * WebDriver - done Properties - done Logs - log4j jar, .log,
-	 * log4j.properties, Logger ExtentReports DB Excel Mail ReportNG,
-	 * ExtentReports Jenkins
+	 * WebDriver - done Properties - done Logs - log4j jar, .log, log4j.properties,
+	 * Logger ExtentReports DB Excel Mail ReportNG, ExtentReports Jenkins
 	 * 
 	 */
 
@@ -59,17 +65,12 @@ public class TestBase {
 	public static ExtentTest test;
 	public static String browser;
 	public static Actions action;
-	
 
 	/**
-	 * @author ArshadM
-	 * initiating file input streams
-	 * initiating browser driver
-	 * inititating configurations
-	 * initiating reports
-	 * intitiating logs
+	 * @author ArshadM initiating file input streams initiating browser driver
+	 *         inititating configurations initiating reports intitiating logs
 	 */
-	
+
 	@BeforeSuite
 	public void setUp() {
 
@@ -104,22 +105,17 @@ public class TestBase {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			
-			
-			
-			if(System.getenv("browser")!=null && !System.getenv("browser").isEmpty()){
-				
+
+			if (System.getenv("browser") != null && !System.getenv("browser").isEmpty()) {
+
 				browser = System.getenv("browser");
-			}else{
-				
+			} else {
+
 				browser = config.getProperty("browser");
-				
+
 			}
-			
+
 			config.setProperty("browser", browser);
-			
-			
-			
 
 			if (config.getProperty("browser").equals("firefox")) {
 
@@ -152,10 +148,9 @@ public class TestBase {
 	}
 
 	/**
-	 * @author ArshadM
-	 * Wrapper mehtod to click on an element
+	 * @author ArshadM Wrapper mehtod to click on an element
 	 */
-	
+
 	public void click(String locator) {
 
 		if (locator.endsWith("_CSS")) {
@@ -164,52 +159,55 @@ public class TestBase {
 			Actions action = new Actions(driver);
 			action.moveToElement(driver.findElement(By.xpath(OR.getProperty(locator)))).perform();
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath(OR.getProperty(locator)))).click();
-			//driver.findElement(By.xpath(OR.getProperty(locator))).click();
+			// driver.findElement(By.xpath(OR.getProperty(locator))).click();
 		} else if (locator.endsWith("_ID")) {
 			driver.findElement(By.id(OR.getProperty(locator))).click();
 		}
-		test.log(LogStatus.INFO, "Clicking on : " + locator);
+		test.log(LogStatus.INFO, "Clicking on : " + locator.toString().replace("_XPATH", ""));
 	}
 
-	
 	/**
-	 * @author ArshadM
-	 * Wrapper method to enter a value in textbox field
+	 * @param element
+	 *            Java scrip click method In case webdriver click does not work
+	 */
+	public void click(WebElement element) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", element);
+		test.log(LogStatus.INFO, "Clicking on : " + element.toString().replace("_XPATH", ""));
+	}
+
+	/**
+	 * @author ArshadM Wrapper method to enter a value in textbox field
 	 */
 	public void type(String locator, String value) {
 
-				
 		if (locator.endsWith("_CSS")) {
-			
-			//wait.until(ExpectedConditions.elementToBeClickable(element)).click();
+
+			// wait.until(ExpectedConditions.elementToBeClickable(element)).click();
 			driver.findElement(By.cssSelector(OR.getProperty(locator))).sendKeys(value);
 		} else if (locator.endsWith("_XPATH")) {
-			//action.moveToElement(driver.findElement(By.xpath(OR.getProperty(locator)))).sendKeys(value).build().perform();;;
-			//wait.until(ExpectedConditions.elementToBeClickable(By.xpath(OR.getProperty(locator)))).clear();
-			
+			// action.moveToElement(driver.findElement(By.xpath(OR.getProperty(locator)))).sendKeys(value).build().perform();;;
+			// wait.until(ExpectedConditions.elementToBeClickable(By.xpath(OR.getProperty(locator)))).clear();
+
 			wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(OR.getProperty(locator))))).clear();
 			driver.findElement(By.xpath(OR.getProperty(locator))).sendKeys(value);
 		} else if (locator.endsWith("_ID")) {
 			driver.findElement(By.id(OR.getProperty(locator))).sendKeys(value);
 		}
 
-		test.log(LogStatus.INFO, "Typing in : " + locator + " entered value as " + value);
+		test.log(LogStatus.INFO, "Typing in : " + locator.toString().replace("_XPATH", "") + " entered value as " + value);
 
 	}
-	
-	
-	
+
 	/**
-	 * @author ArshadM
-	 * Method to enter a key
+	 * @author ArshadM Method to enter a key
 	 */
-	
+
 	public void type(String locator, Keys key) {
 
-		
 		if (locator.endsWith("_CSS")) {
-			
-			//wait.until(ExpectedConditions.elementToBeClickable(element)).click();
+
+			// wait.until(ExpectedConditions.elementToBeClickable(element)).click();
 			driver.findElement(By.cssSelector(OR.getProperty(locator))).sendKeys(key);
 		} else if (locator.endsWith("_XPATH")) {
 			wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(OR.getProperty(locator)))));
@@ -218,15 +216,14 @@ public class TestBase {
 			driver.findElement(By.id(OR.getProperty(locator))).sendKeys(key);
 		}
 
-		test.log(LogStatus.INFO, "Pressed the key: "+key+ " in : " + locator);
+		test.log(LogStatus.INFO, "Pressed the key: " + key + " in : " + locator.toString().replace("_XPATH", ""));
 
 	}
-	
+
 	static WebElement dropdown;
 
 	/**
-	 * @author ArshadM
-	 * Wrapper method for selecting a value from a drop down
+	 * @author ArshadM Wrapper method for selecting a value from a drop down
 	 */
 	public void select(String locator, String value) {
 
@@ -237,18 +234,16 @@ public class TestBase {
 		} else if (locator.endsWith("_ID")) {
 			dropdown = driver.findElement(By.id(OR.getProperty(locator)));
 		}
-		
+
 		Select select = new Select(dropdown);
 		select.selectByVisibleText(value);
 
-		test.log(LogStatus.INFO, "Selecting from dropdown : " + locator + " value as " + value);
+		test.log(LogStatus.INFO, "Selecting from dropdown : " + locator.toString().replace("_XPATH", "") + " value as " + value);
 
 	}
 
-	
 	/**
-	 * @author ArshadM
-	 * Check if an element is present
+	 * @author ArshadM Check if an element is present
 	 */
 	public boolean isElementPresent(By by) {
 
@@ -266,15 +261,14 @@ public class TestBase {
 	}
 
 	/**
-	 * @author ArshadM
-	 * Verify two strings
+	 * @author ArshadM Verify two strings
 	 */
-	public static void verifyEquals(String expected, String actual) throws IOException {
+	public static void verifyEqualsIgnoreCase(String expected, String actual) throws IOException {
 
 		try {
 
-			Assert.assertEquals(actual, expected);
-			test.log(LogStatus.INFO, "Verifying the expected text: " +  expected);
+			Assert.assertEquals(actual.toLowerCase(), expected.toLowerCase());
+			test.log(LogStatus.INFO, "Verifying the expected text: " + expected);
 
 		} catch (Throwable t) {
 
@@ -288,56 +282,158 @@ public class TestBase {
 			// Extent Reports
 			test.log(LogStatus.FAIL, " Verification failed with exception : " + t.getMessage());
 			test.log(LogStatus.FAIL, test.addScreenCapture(TestUtil.screenshotName));
-			
-			
 
 		}
-		
-		
 
+	}
+
+	public static void verifyEquals(int expected, int actual) throws IOException {
+
+		try {
+
+			Assert.assertEquals(actual, expected);
+			test.log(LogStatus.INFO, "Verifying the expected text: " + expected);
+
+		} catch (Throwable t) {
+
+			TestUtil.captureScreenshot();
+			// ReportNG
+			Reporter.log("<br>" + "Verification failure : " + t.getMessage() + "<br>");
+			Reporter.log("<a target=\"_blank\" href=" + TestUtil.screenshotName + "><img src=" + TestUtil.screenshotName
+					+ " height=200 width=200></img></a>");
+			Reporter.log("<br>");
+			Reporter.log("<br>");
+			// Extent Reports
+			test.log(LogStatus.FAIL, " Verification failed with exception : " + t.getMessage());
+			test.log(LogStatus.FAIL, test.addScreenCapture(TestUtil.screenshotName));
+
+		}
+
+	}
+
+	public static void verifyContains(String text, String word) throws IOException {
+		try {
+
+			assertTrue(text.contains(word));
+			test.log(LogStatus.INFO, "Asserting " + text + "contains: " + word);
+
+		} catch (Throwable t) {
+
+			TestUtil.captureScreenshot();
+			// ReportNG
+			Reporter.log("<br>" + "Verification failure : " + t.getMessage() + "<br>");
+			Reporter.log("<a target=\"_blank\" href=" + TestUtil.screenshotName + "><img src=" + TestUtil.screenshotName
+					+ " height=200 width=200></img></a>");
+			Reporter.log("<br>");
+			Reporter.log("<br>");
+			// Extent Reports
+			test.log(LogStatus.FAIL, " Assertion failed for " + text + " with exception : " + t.getMessage());
+			test.log(LogStatus.FAIL, test.addScreenCapture(TestUtil.screenshotName));
+
+		}
+
+	}
+
+	public void verifyElementExists(String xpath) throws IOException {
+
+		try {
+			List<WebElement> element = driver.findElements(By.xpath(OR.getProperty(xpath)));
+			int val = element.size();
+			if (val > 0) {
+				assertTrue(true);
+				test.log(LogStatus.INFO, "Asserting element " + xpath + " exists");
+			}
+
+			else {
+				assertTrue(false);
+				test.log(LogStatus.INFO, "Asserting element " + xpath + " does not exist");
+			}
+
+		} catch (Throwable t) {
+
+			TestUtil.captureScreenshot();
+			// ReportNG
+			Reporter.log("<br>" + "Verification failure : " + t.getMessage() + "<br>");
+			Reporter.log("<a target=\"_blank\" href=" + TestUtil.screenshotName + "><img src=" + TestUtil.screenshotName
+					+ " height=200 width=200></img></a>");
+			Reporter.log("<br>");
+			Reporter.log("<br>");
+			// Extent Reports
+			test.log(LogStatus.FAIL, " Assertion failed for " + xpath + " with exception : " + t.getMessage());
+			test.log(LogStatus.FAIL, test.addScreenCapture(TestUtil.screenshotName));
+
+		}
 	}
 	
 	
+	public void verifyElementExistNot(String xpath) throws IOException {
+
+		try {
+			List<WebElement> element = driver.findElements(By.xpath(OR.getProperty(xpath)));
+			int val = element.size();
+			if (val == 0) {
+				assertTrue(true);
+				test.log(LogStatus.INFO, "Asserting element " + xpath + " does not exist");
+			}
+
+			else {
+				assertTrue(false);
+				test.log(LogStatus.INFO, "Asserting element " + xpath + " exists");
+			}
+
+		} catch (Throwable t) {
+
+			TestUtil.captureScreenshot();
+			// ReportNG
+			Reporter.log("<br>" + "Verification failure : " + t.getMessage() + "<br>");
+			Reporter.log("<a target=\"_blank\" href=" + TestUtil.screenshotName + "><img src=" + TestUtil.screenshotName
+					+ " height=200 width=200></img></a>");
+			Reporter.log("<br>");
+			Reporter.log("<br>");
+			// Extent Reports
+			test.log(LogStatus.FAIL, " Assertion failed for " + xpath + " with exception : " + t.getMessage());
+			test.log(LogStatus.FAIL, test.addScreenCapture(TestUtil.screenshotName));
+
+		}
+	}
+
 	/**
-	 * @author ArshadM
-	 * Close newly opened tab
+	 * @author ArshadM Close newly opened tab
 	 */
-	
+
 	public void closeNewTab() {
-		 String originalHandle = driver.getWindowHandle();
+		String originalHandle = driver.getWindowHandle();
 
-		    //Do something to open new tabs
+		// Do something to open new tabs
 
-		    for(String handle : driver.getWindowHandles()) {
-		        if (!handle.equals(originalHandle)) {
-		            driver.switchTo().window(handle);
-		            driver.close();
-		        }
-		    }
+		for (String handle : driver.getWindowHandles()) {
+			if (!handle.equals(originalHandle)) {
+				driver.switchTo().window(handle);
+				driver.close();
+			}
+		}
 
-		    driver.switchTo().window(originalHandle);
+		driver.switchTo().window(originalHandle);
 	}
-	
-	
+
 	/**
-	 * @author ArshadM
-	 * Navigate to newly openened tab
+	 * @author ArshadM Navigate to newly openened tab
 	 */
 	public void swithToNewTab() {
-		 String originalHandle = driver.getWindowHandle();
+		String originalHandle = driver.getWindowHandle();
 
-		    //Do something to open new tabs
+		// Do something to open new tabs
 
-		    for(String handle : driver.getWindowHandles()) {
-		        if (!handle.equals(originalHandle)) {
-		            driver.switchTo().window(handle);
-		            //driver.close();
-		        }
-		    }
-		    
-		    test.log(LogStatus.INFO, "Switching to new tab ");
+		for (String handle : driver.getWindowHandles()) {
+			if (!handle.equals(originalHandle)) {
+				driver.switchTo().window(handle);
+				// driver.close();
+			}
+		}
 
-		   // driver.switchTo().window(originalHandle);
+		test.log(LogStatus.INFO, "Switching to new tab ");
+
+		// driver.switchTo().window(originalHandle);
 	}
 
 	@AfterSuite
@@ -349,20 +445,16 @@ public class TestBase {
 
 		log.debug("test execution completed !!!");
 	}
-	
-	
+
 	@BeforeMethod
 	public void beforeTest() throws InterruptedException {
 		closeNewTab();
 
-		driver.get("https://upnorway:upnorway123@qa.upnorway.net");
+		driver.get(config.getProperty("testsiteurl"));
 	}
-	
-	
 
-	
 	@AfterTest
 	public void afterTest() {
-		wait=new WebDriverWait(driver, 30);
+		wait = new WebDriverWait(driver, 30);
 	}
 }

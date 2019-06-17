@@ -39,7 +39,7 @@ public class SendEnquiry extends TestBase {
 		String message2 = driver.findElement(By.xpath(OR.getProperty("enquirySuccessMessage_XPATH"))).getText();
 
 		//Verify the success message
-		verifyEquals(OR.getProperty("successMessage"), message2);
+		verifyEqualsIgnoreCase(OR.getProperty("successMessage"), message2);
 		
 		//Close the success message
 		click("enquirySuccessMessageCloseBtn_XPATH");

@@ -16,7 +16,7 @@ public class BankManagerLoginTest extends TestBase {
 	public void bankManagerLoginTest() throws InterruptedException, IOException{
 		
 		
-		verifyEquals("abc", "xyz");
+		verifyEqualsIgnoreCase("abc", "xyz");
 		Thread.sleep(3000);
 		log.debug("Inside Login Test");
 		click("bmlBtn_CSS");

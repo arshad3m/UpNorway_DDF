@@ -5,7 +5,7 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -36,7 +36,7 @@ public class Homepage extends TestBase {
 		String first_desc=driver.findElement(By.xpath(OR.getProperty("opened_page_title_XPATH"))).getText();
 		
 		//Verify that the user landed in the correct page
-		verifyEquals(topoftheseason, first_desc);
+		verifyEqualsIgnoreCase(topoftheseason, first_desc);
 
 
 	}
@@ -54,9 +54,24 @@ public class Homepage extends TestBase {
 		click("seeMore_XPATH");
 		
 		//Verify that the user is navigated to the Journeys page
-		verifyEquals("PERSONALIZED INSIDER JOURNEYS", driver.findElement(By.xpath(OR.getProperty("opened_page_title_XPATH"))).getText());
+		verifyEqualsIgnoreCase("PERSONALIZED INSIDER JOURNEYS", driver.findElement(By.xpath(OR.getProperty("opened_page_title_XPATH"))).getText());
 	
 
+	}
+	
+	
+	@Test(enabled=false)
+	public void slideTestimonials() {
+		
+		//Move to testimonials section
+		Actions action = new Actions(driver);
+		action.moveToElement(driver.findElement(By.xpath(OR.getProperty("testimonials_XPATH"))));
+		
+		//Read first, second and third testimonials
+		
+		List <WebElement> list = driver.findElements(By.xpath(OR.getProperty("testimonial_cards_XPATH")));
+		
+		String first_title=list.get(0).getAttribute("");
 	}
 
 }
