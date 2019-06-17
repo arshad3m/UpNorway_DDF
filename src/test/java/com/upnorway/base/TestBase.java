@@ -141,7 +141,7 @@ public class TestBase {
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")),
 					TimeUnit.SECONDS);
-			wait = new WebDriverWait(driver, 50);
+			wait = new WebDriverWait(driver, 25);
 			action = new Actions(driver);
 		}
 
