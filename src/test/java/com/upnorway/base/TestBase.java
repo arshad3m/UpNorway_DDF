@@ -18,9 +18,11 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -124,9 +126,17 @@ public class TestBase {
 
 			} else if (config.getProperty("browser").equals("chrome")) {
 
-				System.setProperty("webdriver.chrome.driver",
+				/*System.setProperty("webdriver.chrome.driver",
 						System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\chromedriver.exe");
+				*/
+				
+				System.setProperty("webdriver.chrome.driver","C:/Program Files (x86)/Jenkins/workspace/SLIIT regression/src/test/resources/executables/chromedriver.exe");
+				
+				
+				
 				driver = new ChromeDriver();
+				
+				
 				log.debug("Chrome Launched !!!");
 			} else if (config.getProperty("browser").equals("ie")) {
 
@@ -151,20 +161,29 @@ public class TestBase {
 	 * @author ArshadM Wrapper mehtod to click on an element
 	 */
 
-	public void click(String locator) {
+	public static void click(String locator) {
 
-		if (locator.endsWith("_CSS")) {
-			driver.findElement(By.cssSelector(OR.getProperty(locator))).click();
-		} else if (locator.endsWith("_XPATH")) {
-			Actions action = new Actions(driver);
-			action.moveToElement(driver.findElement(By.xpath(OR.getProperty(locator)))).perform();
-			wait.until(ExpectedConditions.elementToBeClickable(By.xpath(OR.getProperty(locator)))).click();
-			// driver.findElement(By.xpath(OR.getProperty(locator))).click();
-		} else if (locator.endsWith("_ID")) {
-			driver.findElement(By.id(OR.getProperty(locator))).click();
+		try {
+			if (locator.endsWith("_CSS")) {
+				driver.findElement(By.cssSelector(OR.getProperty(locator))).click();
+			} else if (locator.endsWith("_XPATH")) {
+				Actions action = new Actions(driver);
+				action.moveToElement(driver.findElement(By.xpath(OR.getProperty(locator)))).perform();
+				wait.until(ExpectedConditions.elementToBeClickable(By.xpath(OR.getProperty(locator)))).click();
+				// driver.findElement(By.xpath(OR.getProperty(locator))).click();
+			} else if (locator.endsWith("_ID")) {
+				driver.findElement(By.id(OR.getProperty(locator))).click();
+			}
+			test.log(LogStatus.INFO, "Clicking on : " + locator.toString().replace("_XPATH", ""));
+			
+			}catch(Throwable t) {
+				WebElement element = driver.findElement(By.xpath(OR.getProperty(locator)));
+				wait.until(ExpectedConditions.elementToBeClickable(element));
+				JavascriptExecutor js = (JavascriptExecutor) driver;
+				js.executeScript("arguments[0].click();", element);
+				test.log(LogStatus.INFO, "Clickingg on : " + element.toString().replace("_XPATH", ""));
+			}
 		}
-		test.log(LogStatus.INFO, "Clicking on : " + locator.toString().replace("_XPATH", ""));
-	}
 
 	/**
 	 * @param element
@@ -365,6 +384,25 @@ public class TestBase {
 		}
 	}
 	
+	/**
+	 * @author ArshadM 
+	 * Get text attribute of the element
+	 * 
+	 */
+	public static String getTextAttribute(String xpath) {
+		
+		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(OR.getProperty(xpath)))));
+		String text = driver.findElement(By.xpath(OR.getProperty(xpath))).getAttribute("value");
+		test.log(LogStatus.INFO, "Reading value of " + xpath.toString().replace("_XPATH", " "));
+		
+		if(text==null) {
+			text=driver.findElement(By.xpath(OR.getProperty(xpath))).getAttribute("innerText");
+		}
+		
+
+		return text;	
+		
+	}
 	
 	public void verifyElementExistNot(String xpath) throws IOException {
 
