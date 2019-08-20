@@ -126,11 +126,11 @@ public class TestBase {
 
 			} else if (config.getProperty("browser").equals("chrome")) {
 
-				/*System.setProperty("webdriver.chrome.driver",
+				System.setProperty("webdriver.chrome.driver",
 						System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\chromedriver.exe");
-				*/
 				
-				System.setProperty("webdriver.chrome.driver","C:/Program Files (x86)/Jenkins/workspace/SLIIT regression/src/test/resources/executables/chromedriver.exe");
+				
+				//System.setProperty("webdriver.chrome.driver","\\src\\test\\resources\\executables\\chromedriver.exe");
 				
 				
 				

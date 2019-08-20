@@ -96,12 +96,8 @@ public class CustomListeners extends TestBase implements ITestListener,ISuiteLis
 		//messageBody = "http://" + InetAddress.getLocalHost().getHostAddress() + ":8080/job/smoke_test/Extent_20Report/";
 		//messageBody="https://jenkins.upnorway.net/job/Smoke_test/Extent_20Report/";
 		
-		try {
-			messageBody = "http://" + InetAddress.getLocalHost().getHostAddress() + ":8080/job/UpNorway%20regression/Extent_20Report/";
-		} catch (UnknownHostException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}
+		//messageBody = "http://" + InetAddress.getLocalHost().getHostAddress() + ":8080/job/UpNorway%20regression/Extent_20Report/";
+		messageBody = "\\sliit_upnorway\\html2\\extent.html";
 	
 		try {
 			mail.sendMail(TestConfig.server, TestConfig.from, TestConfig.to, TestConfig.subject, messageBody);
