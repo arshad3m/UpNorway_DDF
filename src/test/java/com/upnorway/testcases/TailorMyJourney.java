@@ -103,7 +103,7 @@ public class TailorMyJourney extends TestBase {
 		click("nextBtn_XPATH");
 
 		// Verify message prompting to select accommodation
-		verifyEqualsIgnoreCase("Please limit your choice to one.",
+		verifyEqualsIgnoreCase("Please choose one.",
 				driver.findElement(By.xpath(OR.getProperty("validation_XPATH"))).getText());
 
 		// Select accommodation
