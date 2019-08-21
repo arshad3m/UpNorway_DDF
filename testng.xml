@@ -13,16 +13,16 @@
 		<parameter name="keyword_for_less" value="drifting" />
 		<parameter name="keyword_for_many" value="summer" />
 		<parameter name="keyword_invalid" value="abcdxyg987" />
-		<parameter name="firstname" value="Kane" />
-		<parameter name="lastname" value="Williamson" />
-		<parameter name="age" value="34 years young" />
-		<parameter name="email" value="kane@cricket.nz" />
+		<parameter name="firstname" value="Dana" />
+		<parameter name="lastname" value="White" />
+		<parameter name="age" value="44 years young" />
+		<parameter name="email" value="dana@ufc.com" />
 		<parameter name="phone" value="0097444667" />
 		<parameter name="arrivaldate" value="31st of December 2030" />
 		<parameter name="lengthofthetrip" value="4" />
-		<parameter name="occupation" value="Cricketer" />
+		<parameter name="occupation" value="Enterprenuer" />
 		<parameter name="adultscount" value="9" />
-		<parameter name="travellingfrom" value="New Zealand" />
+		<parameter name="travellingfrom" value="United States of America" />
 		<parameter name="message"
 			value="I would love to travel Norway" />
 
@@ -40,11 +40,11 @@
 	<test name="Journeys">
 		<parameter name="keyword1" value="Os" />
 		<parameter name="keyword2" value="fish" />
-		<parameter name="fname" value="Brian" />
-		<parameter name="lname" value="Lara" />
-		<parameter name="email" value="brian@cricket.wi" />
+		<parameter name="fname" value="Narendra" />
+		<parameter name="lname" value="Singh Modhi" />
+		<parameter name="email" value="president@india.com" />
 		<parameter name="mobile" value="9876543" />
-		<parameter name="from" value="West Indies" />
+		<parameter name="from" value="India" />
 		<parameter name="count" value="4" />
 		<parameter name="expkeyword1" value="eat" />
 
