@@ -3,13 +3,16 @@ package com.upnorway.base;
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -475,13 +478,29 @@ public class TestBase {
 	}
 
 	@AfterSuite
-	public void tearDown() {
+	public void tearDown() throws InterruptedException, IOException {
 
 		if (driver != null) {
 			driver.quit();
 		}
 
 		log.debug("test execution completed !!!");
+		
+		Thread.sleep(10000);
+		
+		copyLogFiles();
+		
+	}
+	
+	
+	public void copyLogFiles() throws IOException {
+		
+		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new java.util.Date());
+		
+		File srcDir = new File(System.getProperty("user.dir") + "\\target\\surefire-reports\\html");
+		File destDir = new File(System.getProperty("user.dir") + "\\target\\surefire-reports\\"+timeStamp);
+		FileUtils.copyDirectory(srcDir, destDir);
+		System.out.println("Created reports directory with timestamp");
 	}
 
 	@BeforeMethod
