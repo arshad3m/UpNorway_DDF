@@ -22,7 +22,8 @@
 		<parameter name="lengthofthetrip" value="4" />
 		<parameter name="occupation" value="Enterprenuer" />
 		<parameter name="adultscount" value="9" />
-		<parameter name="travellingfrom" value="United States of America" />
+		<parameter name="travellingfrom"
+			value="United States of America" />
 		<parameter name="message"
 			value="I would love to travel Norway" />
 
@@ -40,6 +41,7 @@
 	<test name="Journeys">
 		<parameter name="keyword1" value="Os" />
 		<parameter name="keyword2" value="fish" />
+		<parameter name="keyword3" value="cross" />
 		<parameter name="fname" value="Narendra" />
 		<parameter name="lname" value="Singh Modhi" />
 		<parameter name="email" value="president@india.com" />
@@ -50,9 +52,10 @@
 
 
 		<classes>
+
+			<class name="com.upnorway.testcases.Upguides" />
 			<class name="com.upnorway.testcases.Journeys" />
 			<class name="com.upnorway.testcases.Experiences" />
-
 		</classes>
 
 	</test>
