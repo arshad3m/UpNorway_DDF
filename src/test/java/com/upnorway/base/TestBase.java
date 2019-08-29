@@ -289,7 +289,7 @@ public class TestBase {
 
 		try {
 
-			Assert.assertEquals(actual.toLowerCase(), expected.toLowerCase());
+			Assert.assertEquals(actual.toLowerCase().trim(), expected.toLowerCase().trim());
 			test.log(LogStatus.INFO, "Verifying the expected text: " + expected);
 
 		} catch (Throwable t) {
