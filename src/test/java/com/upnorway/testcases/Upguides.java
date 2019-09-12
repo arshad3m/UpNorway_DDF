@@ -6,6 +6,7 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -86,6 +87,94 @@ public class Upguides extends TestBase {
 		// Verify title of the opened page is equal to what was retrieved before opening
 		verifyEqualsIgnoreCase(title_of_first_card, journey_title);
 
+
+	}
+	
+	
+	@Test(enabled = true)
+	@Parameters({ "fname","lname","email","mobile","from","count" })
+	public void upguide_go_to_journey( String fname,String lname,String email, String mobile,String from, String count) throws IOException, InterruptedException {
+
+		// Go to up guides
+		click("upguidesButton_XPATH");
+		
+		
+		// the xpath retrieve all the journeys - hidden and visible
+		List<WebElement> cards = driver.findElements(By.xpath(OR.getProperty("upgCards_XPATH")));
+
+		// add only the visible cards to the new array
+		List<WebElement> cardNames = new ArrayList<WebElement>();
+
+		for (int i = 0; i < cards.size() ; i++) {
+			int x = cards.get(i).getLocation().getX();
+			if (x != 0) {
+				int j = i + 1;
+								
+				cardNames.add(driver.findElement(By.xpath("(//div[@class='destination_main_wrap']//div[@class='destination_wrap '])["+j+"]//h3")));
+
+			}
+		}
+
+		
+
+		
+		// Title of the second card
+		String title_of_sixth_card = cardNames.get(1).getAttribute("innerHTML");
+
+		// Click on the second card
+		click(cardNames.get(1));
+
+		// Verify title of the newly openned article
+		swithToNewTab();
+
+		// Title of the opened page
+		String journey_title = driver.findElement(By.xpath(OR.getProperty("opened_page_title_XPATH"))).getText();
+
+		// Verify title of the opened page is equal to what was retrieved before opening
+		verifyEqualsIgnoreCase(title_of_sixth_card, journey_title);
+		
+		
+		//read article title
+		
+		click("upgFirst_GoToButton_XPATH");
+		
+		//read opened page title
+		
+		//verify titles
+		
+		
+
+		// Click on Enquiry button
+	//	click("enquireButton_XPATH");
+		click(driver.findElement(By.xpath(OR.getProperty("enquireButton_XPATH"))));
+
+
+		// Enter information
+		type("JNfirstname_XPATH", fname);
+		verifyElementExistNot( "JNvalidationmessage_XPATH");
+		type("JNlastname_XPATH", lname);
+		click("JNsendbutton_XPATH");
+		verifyElementExists("JNvalidationmessage_XPATH");
+		type("JNemail_XPATH", email);
+		type("JNPhone_XPATH", mobile);
+		type("JNtravellingFrom_XPATH", from);
+		click("JNimnotsure_XPATH");
+		select("JNnumberoftravellers_XPATH", count);
+		verifyElementExistNot("JNvalidationmessage_XPATH");
+		click("JNsendbutton_XPATH");
+
+		// Send enquiry
+
+		// Verify success message
+
+		// Retrive notification message
+		String message2 = driver.findElement(By.xpath(OR.getProperty("enquirySuccessMessage_XPATH"))).getText();
+
+		// Verify the success message
+		verifyEqualsIgnoreCase(OR.getProperty("successMessage"), message2);
+
+		// Close the success message
+		click("upgClosebutton_XPATH");
 
 	}
 
