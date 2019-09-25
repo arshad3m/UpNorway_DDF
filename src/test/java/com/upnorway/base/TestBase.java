@@ -502,6 +502,30 @@ public class TestBase {
 		FileUtils.copyDirectory(srcDir, destDir);
 		System.out.println("Created reports directory with timestamp");
 	}
+	
+	
+	public void navigate(String url) throws InterruptedException {
+		driver.get(url);
+		test.log(LogStatus.INFO, "Navigating to: "+ url);
+	}
+	
+	public void verifyURL() throws IOException {
+		
+		String url=driver.getCurrentUrl();
+		String exp="https://upnorway.com";
+		if(url.startsWith(exp)) {
+			assertTrue(true);
+			test.log(LogStatus.INFO, "Verified page routed to https://upnorway.com");
+		}
+		
+		else {
+			
+		
+			test.log(LogStatus.FAIL, "Page expected to be routed to: "+ exp + " but was routed to: "+ url);
+			assertTrue(false);
+			
+		}
+	}
 
 	@BeforeMethod
 	public void beforeTest() throws InterruptedException {
