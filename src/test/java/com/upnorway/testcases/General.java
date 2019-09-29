@@ -15,6 +15,11 @@ public class General extends TestBase{
 	
 	@Test(enabled = true, dataProviderClass = TestUtil.class, dataProvider = "dp", priority = 2)
 	public void loginToForest(Hashtable<String, String> data) throws InterruptedException {
+		if (!data.get("runmode").equals("Y")) {
+
+			throw new SkipException("Skipping the test case as the Run mode for data set is NO");
+		}
+		
 		navigate(data.get("forestlink"));
 		
 		type("frst_username_XPATH", config.getProperty("forest_username"));
