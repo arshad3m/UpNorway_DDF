@@ -8,6 +8,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -476,6 +477,17 @@ public class TestBase {
 
 		// driver.switchTo().window(originalHandle);
 	}
+	
+	
+	public void openUrlOnNewTab(String url) throws InterruptedException {
+		
+		((JavascriptExecutor)driver).executeScript("window.open()");
+	    ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+	    driver.switchTo().window(tabs.get(1));
+	    driver.get(url);
+
+		
+	}
 
 	@AfterSuite
 	public void tearDown() throws InterruptedException, IOException {
@@ -526,6 +538,13 @@ public class TestBase {
 			
 		}
 	}
+	
+	
+	public static void waitForElementVisibility(String xpath) {
+		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(OR.getProperty(xpath)))));
+
+	}
+	
 
 	@BeforeMethod
 	public void beforeTest() throws InterruptedException {
