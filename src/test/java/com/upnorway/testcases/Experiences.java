@@ -151,10 +151,10 @@ public class Experiences extends TestBase {
 		verifyEquals(numberOfExperiences, cardNames.size());
 
 		// Title of the sixth card
-		String title_of_sixth_card = cardNames.get(5).getAttribute("innerHTML");
+		String title_of_sixth_card = cardNames.get(4).getAttribute("innerHTML");
 
 		// Click on the sixth card
-		click(cardNames.get(5));
+		click(cardNames.get(4));
 
 		// Verify title of the newly openned article
 		swithToNewTab();
