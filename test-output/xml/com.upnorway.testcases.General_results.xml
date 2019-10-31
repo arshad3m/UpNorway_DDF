@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Journeys"
+           tests="7"
+           failures="0"
+           errors="0"
+           skipped="4"
+           time="10541.699">
+  <properties />
+  
+            <testcase name="loginToForest" time="0.0" classname="com.upnorway.testcases.General">
+          <skipped />
+    </testcase>
+            <testcase name="email_solution" time="0.0" classname="com.upnorway.testcases.General">
+          <skipped />
+    </testcase>
+            <testcase name="email_solution" time="0.0" classname="com.upnorway.testcases.General">
+          <skipped />
+    </testcase>
+            <testcase name="email_solution" time="0.0" classname="com.upnorway.testcases.General">
+          <skipped />
+    </testcase>
+  
+            <testcase name="loginToForest" time="23.375" classname="com.upnorway.testcases.General" />
+                <testcase name="email_solution" time="9895.699" classname="com.upnorway.testcases.General" />
+                <testcase name="email_solution" time="622.611" classname="com.upnorway.testcases.General" />
+      
+</testsuite>

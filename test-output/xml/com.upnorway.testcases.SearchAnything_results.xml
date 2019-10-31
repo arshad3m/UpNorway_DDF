@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Home page"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="69.959">
+  <properties />
+  
+  
+            <testcase name="navigate_Pagination" time="16.127" classname="com.upnorway.testcases.SearchAnything" />
+                <testcase name="search_for_less" time="18.516" classname="com.upnorway.testcases.SearchAnything" />
+                <testcase name="search_for_many" time="26.374" classname="com.upnorway.testcases.SearchAnything" />
+                <testcase name="search_Pagination" time="8.942" classname="com.upnorway.testcases.SearchAnything" />
+      
+</testsuite>
