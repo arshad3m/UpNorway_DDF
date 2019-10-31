@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="firstname" value="Indika"/>
+  <parameter name="occupation" value="Enterprenuer"/>
+  <parameter name="expkeyword1" value="eat"/>
+  <parameter name="keyword3" value="cross"/>
+  <parameter name="keyword1" value="Os"/>
+  <parameter name="keyword2" value="fish"/>
+  <parameter name="arrivaldate" value="31st of December 2030"/>
+  <parameter name="keyword_for_many" value="summer"/>
+  <parameter name="keyword_invalid" value="abcdxyg987"/>
+  <parameter name="travellingfrom" value="United States of America"/>
+  <parameter name="lname" value="Singh Modhi"/>
+  <parameter name="from" value="India"/>
+  <parameter name="email" value="president@india.com"/>
+  <parameter name="keyword_for_less" value="drifting"/>
+  <parameter name="fname" value="Narendra"/>
+  <parameter name="adultscount" value="9"/>
+  <parameter name="verifyTextContactInfo" value="Please fill out all the required fields."/>
+  <parameter name="mobile" value="9876543"/>
+  <parameter name="count" value="4"/>
+  <parameter name="enquireErrorMessage" value="Please fill all the required fields"/>
+  <parameter name="verifyText" value="AUTHENTIC EXPERIENCES FOR THE DISCERNING TRAVELER"/>
+  <parameter name="message" value="I would love to travel Norway"/>
+  <parameter name="lastname" value="White"/>
+  <parameter name="phone" value="0097444667"/>
+  <parameter name="lengthofthetrip" value="4"/>
+  <parameter name="age" value="44 years young"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="com.upnorway.listeners.CustomListeners"/>
+  </listeners>
+  <test name="Home page">
+    <parameter name="firstname" value="Indika"/>
+    <parameter name="occupation" value="Enterprenuer"/>
+    <parameter name="adultscount" value="9"/>
+    <parameter name="verifyTextContactInfo" value="Please fill out all the required fields."/>
+    <parameter name="enquireErrorMessage" value="Please fill all the required fields"/>
+    <parameter name="verifyText" value="AUTHENTIC EXPERIENCES FOR THE DISCERNING TRAVELER"/>
+    <parameter name="message" value="I would love to travel Norway"/>
+    <parameter name="lastname" value="White"/>
+    <parameter name="arrivaldate" value="31st of December 2030"/>
+    <parameter name="keyword_for_many" value="summer"/>
+    <parameter name="keyword_invalid" value="abcdxyg987"/>
+    <parameter name="travellingfrom" value="United States of America"/>
+    <parameter name="phone" value="0097444667"/>
+    <parameter name="lengthofthetrip" value="4"/>
+    <parameter name="age" value="44 years young"/>
+    <parameter name="email" value="dana@ufc.com"/>
+    <parameter name="keyword_for_less" value="drifting"/>
+  </test> <!-- Home page -->
+  <test name="Journeys">
+    <parameter name="fname" value="Narendra"/>
+    <parameter name="lname" value="Singh Modhi"/>
+    <parameter name="expkeyword1" value="eat"/>
+    <parameter name="keyword3" value="cross"/>
+    <parameter name="keyword1" value="Os"/>
+    <parameter name="keyword2" value="fish"/>
+    <parameter name="mobile" value="9876543"/>
+    <parameter name="count" value="4"/>
+    <parameter name="from" value="India"/>
+    <parameter name="email" value="president@india.com"/>
+    <classes>
+      <class name="com.upnorway.testcases.Upguides"/>
+    </classes>
+  </test> <!-- Journeys -->
+</suite> <!-- Failed suite [Suite] -->

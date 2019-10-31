@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Home page"
+           tests="5"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="54.741">
+  <properties />
+  
+  
+            <testcase name="testTailorMyJourenyBackToHome" time="4.542" classname="com.upnorway.testcases.TailorMyJourney" />
+                <testcase name="tailorMyJourney_ValidationCheck" time="20.498" classname="com.upnorway.testcases.TailorMyJourney" />
+                <testcase name="send_Enquiry" time="10.761" classname="com.upnorway.testcases.TailorMyJourney" />
+                <testcase name="testTailorMyJourenyUPNorwayLogo" time="3.703" classname="com.upnorway.testcases.TailorMyJourney" />
+                <testcase name="testTailorMyJourneyContactInfoValidating" time="15.237" classname="com.upnorway.testcases.TailorMyJourney" />
+      
+</testsuite>
