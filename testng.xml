@@ -13,7 +13,7 @@
 		<parameter name="keyword_for_less" value="drifting" />
 		<parameter name="keyword_for_many" value="summer" />
 		<parameter name="keyword_invalid" value="abcdxyg987" />
-		<parameter name="firstname" value="Dana" />
+		<parameter name="firstname" value="Indika" />
 		<parameter name="lastname" value="White" />
 		<parameter name="age" value="44 years young" />
 		<parameter name="email" value="dana@ufc.com" />
@@ -26,12 +26,20 @@
 			value="United States of America" />
 		<parameter name="message"
 			value="I would love to travel Norway" />
+		<parameter name="verifyText"
+			value="AUTHENTIC EXPERIENCES FOR THE DISCERNING TRAVELER" />
+		<parameter name="verifyTextContactInfo"
+			value="Please fill out all the required fields." />
+		<parameter name="enquireErrorMessage"
+			value="Please fill all the required fields" />
+
+
+
 
 		<classes>
-			<class name="com.upnorway.testcases.Homepage" />
-			<class name="com.upnorway.testcases.TailorMyJourney" />
-			<class name="com.upnorway.testcases.SendEnquiry" />
-			<class name="com.upnorway.testcases.SearchAnything" />
+
+
+
 
 		</classes>
 
@@ -50,13 +58,21 @@
 		<parameter name="count" value="4" />
 		<parameter name="expkeyword1" value="eat" />
 
+		<parameter name="TMJvalidateMessage"
+			value="Hello, I’m Henriette. Welcome to Up Norway." />
+		<parameter name="magicAppValidation"
+			value="Up Norway's Magic Map" />
+		<parameter name="keyword4" value="a" />
+		<parameter name="currencytype" value="USD" />
+		<parameter name="shareChannel" value="Facebook" />
+		<parameter name="facebookMessage" value="Facebook" />
+		<parameter name="verifyTopic" value="THE DETAILS:" />
+		
+
 
 		<classes>
-
-			<class name="com.upnorway.testcases.Upguides" />
-			<class name="com.upnorway.testcases.Journeys" />
 			<class name="com.upnorway.testcases.Experiences" />
-			<class name="com.upnorway.testcases.General" />
+
 		</classes>
 
 	</test>
