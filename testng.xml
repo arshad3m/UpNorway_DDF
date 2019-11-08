@@ -52,8 +52,25 @@
 		<parameter name="email" value="president@india.com" />
 		<parameter name="mobile" value="9876543" />
 		<parameter name="from" value="India" />
-		<parameter name="count" value="4" />
+		<parameter name="count" value="5" />
 		<parameter name="expkeyword1" value="eat" />
+
+		<parameter name="TMJvalidateMessage"
+			value="Hello, I’m Henriette. Welcome to Up Norway." />
+		<parameter name="magicAppValidation"
+			value="Up Norway's Magic Map" />
+		<parameter name="keyword4" value="a" />
+		<parameter name="currencytype" value="GBP" />
+		<parameter name="shareChannel" value="Facebook" />
+		<parameter name="facebookMessage" value="Facebook" />
+		<parameter name="verifyTopic" value="THE DETAILS:" />
+		<parameter name="expkeyword" value="LOCAL" />
+		<parameter name="verifyExperienceTitle"
+			value="FJORD SKIING IN THE SUNNMØRE ALPS" />
+
+
+		<classes>
+			
 
 
 		<classes>
