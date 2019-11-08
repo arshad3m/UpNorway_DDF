@@ -132,15 +132,11 @@ public class TestBase {
 
 				System.setProperty("webdriver.chrome.driver",
 						System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\chromedriver.exe");
-				
-				
-				//System.setProperty("webdriver.chrome.driver","\\src\\test\\resources\\executables\\chromedriver.exe");
-				
-				
-				
+
+				// System.setProperty("webdriver.chrome.driver","\\src\\test\\resources\\executables\\chromedriver.exe");
+
 				driver = new ChromeDriver();
-				
-				
+
 				log.debug("Chrome Launched !!!");
 			} else if (config.getProperty("browser").equals("ie")) {
 
@@ -179,19 +175,18 @@ public class TestBase {
 				driver.findElement(By.id(OR.getProperty(locator))).click();
 			}
 			test.log(LogStatus.INFO, "Clicking on : " + locator.toString().replace("_XPATH", ""));
-			
-			}catch(Throwable t) {
-				WebElement element = driver.findElement(By.xpath(OR.getProperty(locator)));
-				wait.until(ExpectedConditions.elementToBeClickable(element));
-				JavascriptExecutor js = (JavascriptExecutor) driver;
-				js.executeScript("arguments[0].click();", element);
-				test.log(LogStatus.INFO, "Clickingg on : " + element.toString().replace("_XPATH", ""));
-			}
+
+		} catch (Throwable t) {
+			WebElement element = driver.findElement(By.xpath(OR.getProperty(locator)));
+			wait.until(ExpectedConditions.elementToBeClickable(element));
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+			js.executeScript("arguments[0].click();", element);
+			test.log(LogStatus.INFO, "Clickingg on : " + element.toString().replace("_XPATH", ""));
 		}
+	}
 
 	/**
-	 * @param element
-	 *            Java scrip click method In case webdriver click does not work
+	 * @param element Java scrip click method In case webdriver click does not work
 	 */
 	public void click(WebElement element) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -218,7 +213,8 @@ public class TestBase {
 			driver.findElement(By.id(OR.getProperty(locator))).sendKeys(value);
 		}
 
-		test.log(LogStatus.INFO, "Typing in : " + locator.toString().replace("_XPATH", "") + " entered value as " + value);
+		test.log(LogStatus.INFO,
+				"Typing in : " + locator.toString().replace("_XPATH", "") + " entered value as " + value);
 
 	}
 
@@ -261,7 +257,8 @@ public class TestBase {
 		Select select = new Select(dropdown);
 		select.selectByVisibleText(value);
 
-		test.log(LogStatus.INFO, "Selecting from dropdown : " + locator.toString().replace("_XPATH", "") + " value as " + value);
+		test.log(LogStatus.INFO,
+				"Selecting from dropdown : " + locator.toString().replace("_XPATH", "") + " value as " + value);
 
 	}
 
@@ -357,6 +354,29 @@ public class TestBase {
 
 	}
 
+	public static void verifyGreaterThanCondition(int count1, int count2) throws IOException {
+		try {
+
+			assertTrue(count1 >= count2);
+			test.log(LogStatus.INFO, "Asserting " + count1 + " greater than " + count2);
+
+		} catch (Throwable t) {
+
+			TestUtil.captureScreenshot();
+			// ReportNG
+			Reporter.log("<br>" + "Verification failure : " + t.getMessage() + "<br>");
+			Reporter.log("<a target=\"_blank\" href=" + TestUtil.screenshotName + "><img src=" + TestUtil.screenshotName
+					+ " height=200 width=200></img></a>");
+			Reporter.log("<br>");
+			Reporter.log("<br>");
+			// Extent Reports
+			test.log(LogStatus.FAIL, " Assertion failed  with exception : " + t.getMessage());
+			test.log(LogStatus.FAIL, test.addScreenCapture(TestUtil.screenshotName));
+
+		}
+
+	}
+
 	public void verifyElementExists(String xpath) throws IOException {
 
 		try {
@@ -387,27 +407,25 @@ public class TestBase {
 
 		}
 	}
-	
+
 	/**
-	 * @author ArshadM 
-	 * Get text attribute of the element
+	 * @author ArshadM Get text attribute of the element
 	 * 
 	 */
 	public static String getTextAttribute(String xpath) {
-		
+
 		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(OR.getProperty(xpath)))));
 		String text = driver.findElement(By.xpath(OR.getProperty(xpath))).getAttribute("value");
 		test.log(LogStatus.INFO, "Reading value of " + xpath.toString().replace("_XPATH", " "));
-		
-		if(text==null) {
-			text=driver.findElement(By.xpath(OR.getProperty(xpath))).getAttribute("innerText");
-		}
-		
 
-		return text;	
-		
+		if (text == null) {
+			text = driver.findElement(By.xpath(OR.getProperty(xpath))).getAttribute("innerText");
+		}
+
+		return text;
+
 	}
-	
+
 	public void verifyElementExistNot(String xpath) throws IOException {
 
 		try {
@@ -477,16 +495,14 @@ public class TestBase {
 
 		// driver.switchTo().window(originalHandle);
 	}
-	
-	
-	public void openUrlOnNewTab(String url) throws InterruptedException {
-		
-		((JavascriptExecutor)driver).executeScript("window.open()");
-	    ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
-	    driver.switchTo().window(tabs.get(1));
-	    driver.get(url);
 
-		
+	public void openUrlOnNewTab(String url) throws InterruptedException {
+
+		((JavascriptExecutor) driver).executeScript("window.open()");
+		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+		driver.switchTo().window(tabs.get(1));
+		driver.get(url);
+
 	}
 
 	@AfterSuite
@@ -497,54 +513,49 @@ public class TestBase {
 		}
 
 		log.debug("test execution completed !!!");
-		
+
 		Thread.sleep(10000);
-		
+
 		copyLogFiles();
-		
+
 	}
-	
-	
+
 	public void copyLogFiles() throws IOException {
-		
+
 		String timeStamp = new SimpleDateFormat("y-M-dd, E 'at' h.m a").format(new java.util.Date());
-		
+
 		File srcDir = new File(System.getProperty("user.dir") + "\\target\\surefire-reports\\html");
-		File destDir = new File(System.getProperty("user.dir") + "\\target\\surefire-reports\\"+timeStamp);
+		File destDir = new File(System.getProperty("user.dir") + "\\target\\surefire-reports\\" + timeStamp);
 		FileUtils.copyDirectory(srcDir, destDir);
 		System.out.println("Created reports directory with timestamp");
 	}
-	
-	
+
 	public void navigate(String url) throws InterruptedException {
 		driver.get(url);
-		test.log(LogStatus.INFO, "Navigating to: "+ url);
+		test.log(LogStatus.INFO, "Navigating to: " + url);
 	}
-	
+
 	public void verifyURL() throws IOException {
-		
-		String url=driver.getCurrentUrl();
-		String exp="https://upnorway.com";
-		if(url.startsWith(exp)) {
+
+		String url = driver.getCurrentUrl();
+		String exp = "https://upnorway.com";
+		if (url.startsWith(exp)) {
 			assertTrue(true);
 			test.log(LogStatus.INFO, "Verified page routed to https://upnorway.com");
 		}
-		
+
 		else {
-			
-		
-			test.log(LogStatus.FAIL, "Page expected to be routed to: "+ exp + " but was routed to: "+ url);
+
+			test.log(LogStatus.FAIL, "Page expected to be routed to: " + exp + " but was routed to: " + url);
 			assertTrue(false);
-			
+
 		}
 	}
-	
-	
+
 	public static void waitForElementVisibility(String xpath) {
 		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(OR.getProperty(xpath)))));
 
 	}
-	
 
 	@BeforeMethod
 	public void beforeTest() throws InterruptedException {
