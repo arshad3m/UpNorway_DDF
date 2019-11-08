@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.Hashtable;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.SkipException;
 import org.testng.annotations.Test;
@@ -76,6 +77,9 @@ public class General extends TestBase {
 		waitForElementVisibility("frst_booking_XPATH");
 
 		Thread.sleep(6000);
+		
+		Actions action = new Actions(driver);
+		action.moveToElement(driver.findElement(By.xpath(OR.getProperty("frst_bottom_XPATH")))).build().perform();
 
 		String sent_message = getTextAttribute("frst_message_text_XPATH");
 		String message_type = getTextAttribute("frst_message_type_XPATH");
@@ -110,6 +114,10 @@ public class General extends TestBase {
 
 		waitForElementVisibility("frst_booking_XPATH");
 		Thread.sleep(6000);
+		
+		action.moveToElement(driver.findElement(By.xpath(OR.getProperty("frst_bottom_XPATH")))).build().perform();
+
+		
 
 		String sent_message2 = getTextAttribute("frst_message_text_XPATH");
 

@@ -118,11 +118,11 @@ public class Upguides extends TestBase {
 		
 
 		
-		// Title of the second card
-		String title_of_sixth_card = cardNames.get(1).getAttribute("innerHTML");
+		// Title of the fourth card
+		String title_of_sixth_card = cardNames.get(3).getAttribute("innerHTML");
 
-		// Click on the second card
-		click(cardNames.get(1));
+		// Click on the fourth card
+		click(cardNames.get(3));
 
 		// Verify title of the newly openned article
 		swithToNewTab();

@@ -52,7 +52,7 @@ public class TailorMyJourney extends TestBase {
 
 	}
 
-	@Test(enabled = false)
+	@Test(enabled = true)
 	@Parameters({ "firstname", "lastname", "age", "email", "phone", "arrivaldate", "lengthofthetrip", "occupation",
 			"adultscount", "travellingfrom" })
 	public void tailorMyJourney_ValidationCheck(String firstname, String lastname, String age, String email,
@@ -252,8 +252,9 @@ public class TailorMyJourney extends TestBase {
 
 	// Selecting "UP Norway" logo option from tailor my journey and navigate back to
 	// home page
-	@Test(enabled = true)
+	
 	@Parameters({ "firstname", "verifyText" })
+	@Test(enabled = true)
 	public void testTailorMyJourenyUPNorwayLogo(String firstname, String verifyText) throws IOException {
 
 		// Click Tailor My Journey option
@@ -281,10 +282,10 @@ public class TailorMyJourney extends TestBase {
 
 	// validating the contact details form - Generating an error message when not
 	// filling all mandatory data
-	@Test(enabled = true)
+	
 	@Parameters({ "firstname", "lastname", "age", "email", "phone", "arrivaldate", "lengthofthetrip", "occupation",
 			"adultscount", "travellingfrom", "verifyTextContactInfo" })
-
+	@Test(enabled = true)
 	public void testTailorMyJourneyContactInfoValidating(String firstname, String lastname, String age, String email,
 			String phone, String arrivaldate, String lengthofthetrip, String occupation, String adultscount,
 			String travellingfrom, String verifyTextContactInfo) throws InterruptedException, IOException {
