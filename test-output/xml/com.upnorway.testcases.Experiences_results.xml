@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Journeys"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="78.381">
+  <properties />
+  
+  
+            <testcase name="search_experiences" time="16.714" classname="com.upnorway.testcases.Experiences" />
+                <testcase name="experience_enquire" time="61.667" classname="com.upnorway.testcases.Experiences" />
+      
+</testsuite>

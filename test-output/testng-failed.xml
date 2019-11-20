@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="firstname" value="Indika"/>
+  <parameter name="occupation" value="Enterprenuer"/>
+  <parameter name="expkeyword1" value="eat"/>
+  <parameter name="keyword3" value="cross"/>
+  <parameter name="keyword4" value="a"/>
+  <parameter name="keyword1" value="Os"/>
+  <parameter name="keyword2" value="fish"/>
+  <parameter name="verifyExperienceTitle" value="FJORD SKIING IN THE SUNNMØRE ALPS"/>
+  <parameter name="arrivaldate" value="31st of December 2030"/>
+  <parameter name="keyword_for_many" value="summer"/>
+  <parameter name="keyword_invalid" value="abcdxyg987"/>
+  <parameter name="travellingfrom" value="United States of America"/>
+  <parameter name="lname" value="Singh Modhi"/>
+  <parameter name="TMJvalidateMessage" value="Hello, I’m Henriette. Welcome to Up Norway."/>
+  <parameter name="from" value="India"/>
+  <parameter name="email" value="president@india.com"/>
+  <parameter name="keyword_for_less" value="drifting"/>
+  <parameter name="fname" value="Narendra"/>
+  <parameter name="adultscount" value="9"/>
+  <parameter name="verifyTextContactInfo" value="Please fill out all the required fields."/>
+  <parameter name="mobile" value="9876543"/>
+  <parameter name="count" value="5"/>
+  <parameter name="facebookMessage" value="Facebook"/>
+  <parameter name="enquireErrorMessage" value="Please fill all the required fields"/>
+  <parameter name="expkeyword" value="LOCAL"/>
+  <parameter name="verifyText" value="AUTHENTIC EXPERIENCES FOR THE DISCERNING TRAVELER"/>
+  <parameter name="message" value="I would love to travel Norway"/>
+  <parameter name="lastname" value="White"/>
+  <parameter name="currencytype" value="GBP"/>
+  <parameter name="verifyTopic" value="THE DETAILS:"/>
+  <parameter name="phone" value="0097444667"/>
+  <parameter name="shareChannel" value="Facebook"/>
+  <parameter name="lengthofthetrip" value="4"/>
+  <parameter name="age" value="44 years young"/>
+  <parameter name="magicAppValidation" value="Up Norway&#039;s Magic Map"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="com.upnorway.listeners.CustomListeners"/>
+  </listeners>
+  <test name="Home page">
+    <parameter name="firstname" value="Indika"/>
+    <parameter name="occupation" value="Enterprenuer"/>
+    <parameter name="adultscount" value="9"/>
+    <parameter name="verifyTextContactInfo" value="Please fill out all the required fields."/>
+    <parameter name="enquireErrorMessage" value="Please fill all the required fields"/>
+    <parameter name="verifyText" value="AUTHENTIC EXPERIENCES FOR THE DISCERNING TRAVELER"/>
+    <parameter name="message" value="I would love to travel Norway"/>
+    <parameter name="lastname" value="White"/>
+    <parameter name="arrivaldate" value="31st of December 2030"/>
+    <parameter name="keyword_for_many" value="summer"/>
+    <parameter name="keyword_invalid" value="abcdxyg987"/>
+    <parameter name="travellingfrom" value="United States of America"/>
+    <parameter name="phone" value="0097444667"/>
+    <parameter name="lengthofthetrip" value="4"/>
+    <parameter name="age" value="44 years young"/>
+    <parameter name="email" value="dana@ufc.com"/>
+    <parameter name="keyword_for_less" value="drifting"/>
+    <classes>
+      <class name="com.upnorway.testcases.Homepage"/>
+      <class name="com.upnorway.testcases.TailorMyJourney"/>
+      <class name="com.upnorway.testcases.SendEnquiry"/>
+      <class name="com.upnorway.testcases.SearchAnything"/>
+    </classes>
+  </test> <!-- Home page -->
+  <test name="Journeys">
+    <parameter name="fname" value="Narendra"/>
+    <parameter name="expkeyword1" value="eat"/>
+    <parameter name="keyword3" value="cross"/>
+    <parameter name="keyword4" value="a"/>
+    <parameter name="keyword1" value="Os"/>
+    <parameter name="keyword2" value="fish"/>
+    <parameter name="mobile" value="9876543"/>
+    <parameter name="count" value="5"/>
+    <parameter name="facebookMessage" value="Facebook"/>
+    <parameter name="expkeyword" value="LOCAL"/>
+    <parameter name="verifyExperienceTitle" value="FJORD SKIING IN THE SUNNMØRE ALPS"/>
+    <parameter name="currencytype" value="GBP"/>
+    <parameter name="lname" value="Singh Modhi"/>
+    <parameter name="verifyTopic" value="THE DETAILS:"/>
+    <parameter name="TMJvalidateMessage" value="Hello, I’m Henriette. Welcome to Up Norway."/>
+    <parameter name="shareChannel" value="Facebook"/>
+    <parameter name="from" value="India"/>
+    <parameter name="email" value="president@india.com"/>
+    <parameter name="magicAppValidation" value="Up Norway&#039;s Magic Map"/>
+    <classes>
+      <class name="com.upnorway.testcases.Upguides"/>
+      <class name="com.upnorway.testcases.Journeys"/>
+      <class name="com.upnorway.testcases.Experiences"/>
+      <class name="com.upnorway.testcases.General"/>
+    </classes>
+  </test> <!-- Journeys -->
+  <test name="Journeys(failed)">
+    <parameter name="fname" value="Narendra"/>
+    <parameter name="expkeyword1" value="eat"/>
+    <parameter name="keyword3" value="cross"/>
+    <parameter name="keyword4" value="a"/>
+    <parameter name="keyword1" value="Os"/>
+    <parameter name="keyword2" value="fish"/>
+    <parameter name="mobile" value="9876543"/>
+    <parameter name="count" value="5"/>
+    <parameter name="facebookMessage" value="Facebook"/>
+    <parameter name="expkeyword" value="LOCAL"/>
+    <parameter name="verifyExperienceTitle" value="FJORD SKIING IN THE SUNNMØRE ALPS"/>
+    <parameter name="currencytype" value="GBP"/>
+    <parameter name="lname" value="Singh Modhi"/>
+    <parameter name="verifyTopic" value="THE DETAILS:"/>
+    <parameter name="TMJvalidateMessage" value="Hello, I’m Henriette. Welcome to Up Norway."/>
+    <parameter name="shareChannel" value="Facebook"/>
+    <parameter name="from" value="India"/>
+    <parameter name="email" value="president@india.com"/>
+    <parameter name="magicAppValidation" value="Up Norway&#039;s Magic Map"/>
+    <classes>
+      <class name="com.upnorway.testcases.SearchAnything">
+        <methods>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.upnorway.testcases.SearchAnything -->
+      <class name="com.upnorway.testcases.TailorMyJourney">
+        <methods>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.upnorway.testcases.TailorMyJourney -->
+      <class name="com.upnorway.testcases.Homepage">
+        <methods>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- com.upnorway.testcases.Homepage -->
+      <class name="com.upnorway.testcases.General">
+        <methods>
+          <include name="loginToForest" invocation-numbers="0"/>
+          <include name="email_solution" invocation-numbers="0 1 2 3 4"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.upnorway.testcases.General -->
+      <class name="com.upnorway.testcases.SendEnquiry">
+        <methods>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.upnorway.testcases.SendEnquiry -->
+      <class name="com.upnorway.testcases.Journeys">
+        <methods>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.upnorway.testcases.Journeys -->
+      <class name="com.upnorway.testcases.Experiences">
+        <methods>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.upnorway.testcases.Experiences -->
+      <class name="com.upnorway.testcases.Upguides">
+        <methods>
+          <include name="afterTest"/>
+          <include name="tearDown"/>
+          <include name="upguide_go_to_journey" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.upnorway.testcases.Upguides -->
+    </classes>
+  </test> <!-- Journeys(failed) -->
+</suite> <!-- Failed suite [Suite] -->

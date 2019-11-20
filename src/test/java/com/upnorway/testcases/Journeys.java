@@ -252,6 +252,7 @@ public class Journeys extends TestBase {
 		swithToNewTab();
 
 		// validate Magic Map window
+
 		String actualTitle = driver.findElement(By.xpath(OR.getProperty("magicAppValidation_XPATH"))).getText();
 		String expectedTitle = magicAppValidation;
 		verifyEqualsIgnoreCase(actualTitle, expectedTitle);
@@ -311,6 +312,7 @@ public class Journeys extends TestBase {
 		int numberOfJourneysSearch = Integer.parseInt(searchresultCountText.substring(20));
 
 		// verifying the count of listed journeys are not more than the default count
+
 		//assertTrue(numberOfJourneys >= numberOfJourneysSearch);
 		
 		verifyGreaterThanCondition(numberOfJourneys,numberOfJourneysSearch);

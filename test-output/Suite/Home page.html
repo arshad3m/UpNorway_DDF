@@ -1,0 +1,129 @@
+<html>
+<head>
+<title>TestNG:  Home page</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Home page</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>10/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Nov 08 15:26:59 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>154 seconds (154781 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.upnorway.testcases.SearchAnything.navigate_Pagination()'><b>navigate_Pagination</b><br>Test class: com.upnorway.testcases.SearchAnything<br>Parameters: summer</td>
+<td></td>
+<td>14</td>
+<td>com.upnorway.testcases.SearchAnything@614ca7df</td></tr>
+<tr>
+<td title='com.upnorway.testcases.SearchAnything.search_Pagination()'><b>search_Pagination</b><br>Test class: com.upnorway.testcases.SearchAnything<br>Parameters: summer</td>
+<td></td>
+<td>10</td>
+<td>com.upnorway.testcases.SearchAnything@614ca7df</td></tr>
+<tr>
+<td title='com.upnorway.testcases.SearchAnything.search_for_less()'><b>search_for_less</b><br>Test class: com.upnorway.testcases.SearchAnything<br>Parameters: drifting</td>
+<td></td>
+<td>9</td>
+<td>com.upnorway.testcases.SearchAnything@614ca7df</td></tr>
+<tr>
+<td title='com.upnorway.testcases.SearchAnything.search_for_many()'><b>search_for_many</b><br>Test class: com.upnorway.testcases.SearchAnything<br>Parameters: summer</td>
+<td></td>
+<td>28</td>
+<td>com.upnorway.testcases.SearchAnything@614ca7df</td></tr>
+<tr>
+<td title='com.upnorway.testcases.TailorMyJourney.send_Enquiry()'><b>send_Enquiry</b><br>Test class: com.upnorway.testcases.TailorMyJourney<br>Parameters: Indika, White, dana@ufc.com, I would love to travel Norway</td>
+<td></td>
+<td>11</td>
+<td>com.upnorway.testcases.TailorMyJourney@7e7be63f</td></tr>
+<tr>
+<td title='com.upnorway.testcases.SendEnquiry.send_Enquiry()'><b>send_Enquiry</b><br>Test class: com.upnorway.testcases.SendEnquiry<br>Parameters: Indika, White, dana@ufc.com, I would love to travel Norway</td>
+<td></td>
+<td>7</td>
+<td>com.upnorway.testcases.SendEnquiry@6cd28fa7</td></tr>
+<tr>
+<td title='com.upnorway.testcases.TailorMyJourney.tailorMyJourney_ValidationCheck()'><b>tailorMyJourney_ValidationCheck</b><br>Test class: com.upnorway.testcases.TailorMyJourney<br>Parameters: Indika, White, 44 years young, dana@ufc.com, 0097444667, 31st of December 2030, 4, Enterprenuer, 9, United States of America</td>
+<td></td>
+<td>20</td>
+<td>com.upnorway.testcases.TailorMyJourney@7e7be63f</td></tr>
+<tr>
+<td title='com.upnorway.testcases.TailorMyJourney.testTailorMyJourenyBackToHome()'><b>testTailorMyJourenyBackToHome</b><br>Test class: com.upnorway.testcases.TailorMyJourney<br>Parameters: Indika, AUTHENTIC EXPERIENCES FOR THE DISCERNING TRAVELER</td>
+<td></td>
+<td>4</td>
+<td>com.upnorway.testcases.TailorMyJourney@7e7be63f</td></tr>
+<tr>
+<td title='com.upnorway.testcases.TailorMyJourney.testTailorMyJourenyUPNorwayLogo()'><b>testTailorMyJourenyUPNorwayLogo</b><br>Test class: com.upnorway.testcases.TailorMyJourney<br>Parameters: Indika, AUTHENTIC EXPERIENCES FOR THE DISCERNING TRAVELER</td>
+<td></td>
+<td>5</td>
+<td>com.upnorway.testcases.TailorMyJourney@7e7be63f</td></tr>
+<tr>
+<td title='com.upnorway.testcases.TailorMyJourney.testTailorMyJourneyContactInfoValidating()'><b>testTailorMyJourneyContactInfoValidating</b><br>Test class: com.upnorway.testcases.TailorMyJourney<br>Parameters: Indika, White, 44 years young, dana@ufc.com, 0097444667, 31st of December 2030, 4, Enterprenuer, 9, United States of America, Please fill out all the required fields.</td>
+<td></td>
+<td>16</td>
+<td>com.upnorway.testcases.TailorMyJourney@7e7be63f</td></tr>
+</table><p>
+</body>
+</html>
