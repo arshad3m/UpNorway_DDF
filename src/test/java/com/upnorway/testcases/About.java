@@ -12,7 +12,7 @@ public class About extends TestBase {
 
 	@Test(enabled = true)
 	@Parameters({ "aboutTitle", "TMJvalidateMessage" })
-	public void exp_validateCountsAfterFiltering(String aboutTitle, String TMJvalidateMessage)
+	public void about_getStarted(String aboutTitle, String TMJvalidateMessage)
 			throws InterruptedException, IOException {
 
 		// Go to About page
@@ -24,7 +24,7 @@ public class About extends TestBase {
 		verifyEqualsIgnoreCase(actualTitle, expectedTitle);
 
 		// Select get started option
-		click("getStartedButton_XPATH");
+		click("aboutGetStartedButton_XPATH");
 
 		// opens a new window
 		swithToNewTab();
