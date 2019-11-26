@@ -13,8 +13,8 @@
 		<parameter name="keyword_for_less" value="drifting" />
 		<parameter name="keyword_for_many" value="summer" />
 		<parameter name="keyword_invalid" value="abcdxyg987" />
-		<parameter name="firstname" value="Indika" />
-		<parameter name="lastname" value="White" />
+		<parameter name="firstname" value="Donald" />
+		<parameter name="lastname" value="Trump" />
 		<parameter name="age" value="44 years young" />
 		<parameter name="email" value="dana@ufc.com" />
 		<parameter name="phone" value="0097444667" />
@@ -47,13 +47,13 @@
 		<parameter name="keyword1" value="Os" />
 		<parameter name="keyword2" value="fish" />
 		<parameter name="keyword3" value="cross" />
-		<parameter name="fname" value="Narendra" />
-		<parameter name="lname" value="Singh Modhi" />
+		<parameter name="fname" value="George" />
+		<parameter name="lname" value="Bush" />
 		<parameter name="email" value="president@india.com" />
 		<parameter name="mobile" value="9876543" />
 		<parameter name="from" value="India" />
 		<parameter name="count" value="5" />
-		<parameter name="expkeyword1" value="eat" />
+		<parameter name="expkeyword1" value="farm" />
 
 		<parameter name="TMJvalidateMessage"
 			value="Hello, I’m Henriette. Welcome to Up Norway." />
