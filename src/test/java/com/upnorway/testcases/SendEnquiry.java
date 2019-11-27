@@ -13,11 +13,8 @@ import com.upnorway.utilities.TestUtil;
 public class SendEnquiry extends TestBase {
 
 	@Parameters({ "firstname", "lastname", "email", "message" })
-<<<<<<< HEAD
-	@Test(enabled = false)
-=======
+
 	@Test(enabled = true)
->>>>>>> 6a4c31c7fd680df92835039b8ffba96b3b4f1fcc
 	public void send_Enquiry(String firstname, String lastname, String email, String message)
 			throws InterruptedException, IOException {
 
