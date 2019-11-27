@@ -37,12 +37,12 @@
 
 
 		<classes>
-<!-- 
+
 			<class name="com.upnorway.testcases.Homepage" />
 			<class name="com.upnorway.testcases.TailorMyJourney" />
 			<class name="com.upnorway.testcases.SendEnquiry" />
 			<class name="com.upnorway.testcases.SearchAnything" />
--->
+
 
 		</classes>
 
@@ -104,15 +104,14 @@
 
 		<classes>
 
-<!--  
+
 			<class name="com.upnorway.testcases.Upguides" />
 			<class name="com.upnorway.testcases.Journeys" />
 			<class name="com.upnorway.testcases.Experiences" />
 			<class name="com.upnorway.testcases.General" />
 			<class name="com.upnorway.testcases.About" /> 
-			<class name="com.upnorway.testcases.Campaign" />-->
+			<class name="com.upnorway.testcases.Campaign" />
 
-<class name="com.upnorway.testcases.About" /> 
 
 		</classes>
 
