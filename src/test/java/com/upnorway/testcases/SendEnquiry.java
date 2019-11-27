@@ -13,6 +13,7 @@ import com.upnorway.utilities.TestUtil;
 public class SendEnquiry extends TestBase {
 
 	@Parameters({ "firstname", "lastname", "email", "message" })
+
 	@Test(enabled = true)
 
 	public void send_Enquiry(String firstname, String lastname, String email, String message)

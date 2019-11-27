@@ -251,6 +251,7 @@ public class Journeys extends TestBase {
 
 		swithToNewTab();
 
+
 		// validate Magic Map window
 
 		String actualTitle = driver.findElement(By.xpath(OR.getProperty("magicAppValidation_XPATH"))).getText();
@@ -310,6 +311,7 @@ public class Journeys extends TestBase {
 
 		// Number of results showing in search results text
 		int numberOfJourneysSearch = Integer.parseInt(searchresultCountText.substring(20));
+
 
 		// verifying the count of listed journeys are not more than the default count
 
