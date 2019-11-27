@@ -255,7 +255,7 @@ public class Experiences extends TestBase {
 	@Parameters({ "expkeyword1" })
 	public void exp_validateCountsAfterFiltering(String expkeyword1) throws InterruptedException, IOException {
 
-		// Go to journeys
+		// Go to Experiences
 		click("experienceButton_XPATH");
 
 		String resultCountText = driver.findElement(By.xpath(OR.getProperty("expResultsCount_XPATH")))
@@ -341,5 +341,5 @@ public class Experiences extends TestBase {
 		verifyEqualsIgnoreCase(actualTitle, expectedTitle);
 
 	}
-
+	 
 }

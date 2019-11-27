@@ -251,7 +251,11 @@ public class Journeys extends TestBase {
 
 		swithToNewTab();
 
+<<<<<<< HEAD
 		// validate Tailor My Journey window
+=======
+		// validate Magic Map window
+>>>>>>> 6a4c31c7fd680df92835039b8ffba96b3b4f1fcc
 		String actualTitle = driver.findElement(By.xpath(OR.getProperty("magicAppValidation_XPATH"))).getText();
 		String expectedTitle = magicAppValidation;
 		verifyEqualsIgnoreCase(actualTitle, expectedTitle);
@@ -310,7 +314,11 @@ public class Journeys extends TestBase {
 		// Number of results showing in search results text
 		int numberOfJourneysSearch = Integer.parseInt(searchresultCountText.substring(20));
 
+<<<<<<< HEAD
 		// verifying the count of listed experiences are not more than the default count
+=======
+		// verifying the count of listed journeys are not more than the default count
+>>>>>>> 6a4c31c7fd680df92835039b8ffba96b3b4f1fcc
 		//assertTrue(numberOfJourneys >= numberOfJourneysSearch);
 		
 		verifyGreaterThanCondition(numberOfJourneys,numberOfJourneysSearch);
