@@ -229,11 +229,8 @@ public class Experiences extends TestBase {
 
 		verifyContains(searchresultText, expkeyword);
 
-		// Click on the TASTE OF LOCAL SECRETS; OVERNIGHT MYSTERY TOUR
-	//	click("expLocal_XPATH");
 		
 		List<WebElement> cards = driver.findElements(By.xpath(OR.getProperty("jourenyCards_XPATH")));
-
 		
 		// add only the visible cards to the new array
 				List<WebElement> cardNames = new ArrayList<WebElement>();
