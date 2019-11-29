@@ -98,6 +98,8 @@
 			value="WE’LL TAKE YOU TO THE HEART OF NORWAY" />
 
 		<parameter name="upguidekeyword" value="ai" />
+		<parameter name="TestimonialTitle" value="TESTIMONIALS" />
+		<parameter name="JourneyTitle" value="GIVE ME MØRE!" />
 
 
 		<parameter name="campaignTitle"
