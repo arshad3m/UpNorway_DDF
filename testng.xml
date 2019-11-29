@@ -13,8 +13,8 @@
 		<parameter name="keyword_for_less" value="drifting" />
 		<parameter name="keyword_for_many" value="summer" />
 		<parameter name="keyword_invalid" value="abcdxyg987" />
-		<parameter name="firstname" value="Indika" />
-		<parameter name="lastname" value="White" />
+		<parameter name="firstname" value="Donald" />
+		<parameter name="lastname" value="Trump" />
 		<parameter name="age" value="44 years young" />
 		<parameter name="email" value="dana@ufc.com" />
 		<parameter name="phone" value="0097444667" />
@@ -33,11 +33,19 @@
 		<parameter name="enquireErrorMessage"
 			value="Please fill all the required fields" />
 
+    <parameter name="PressItemTitle" value="AS SEEN IN PRESS" />
+		<parameter name="GoogleReviewTitle" value="GOOGLE REVIEWS" />
+		<parameter name="PressItemTitle" value="AS SEEN IN PRESS" />
+		<parameter name="GoogleReviewPage" value="Up Norway" />
+
+
 		<classes>
+
 			<class name="com.upnorway.testcases.Homepage" />
 			<class name="com.upnorway.testcases.TailorMyJourney" />
 			<class name="com.upnorway.testcases.SendEnquiry" />
 			<class name="com.upnorway.testcases.SearchAnything" />
+
 		</classes>
 
 
@@ -47,21 +55,93 @@
 		<parameter name="keyword1" value="Os" />
 		<parameter name="keyword2" value="fish" />
 		<parameter name="keyword3" value="cross" />
-		<parameter name="fname" value="Narendra" />
-		<parameter name="lname" value="Singh Modhi" />
+		<parameter name="fname" value="George" />
+		<parameter name="lname" value="Bush" />
 		<parameter name="email" value="president@india.com" />
 		<parameter name="mobile" value="9876543" />
 		<parameter name="from" value="India" />
-		<parameter name="count" value="4" />
-		<parameter name="expkeyword1" value="eat" />
+		<parameter name="count" value="5" />
+		<parameter name="expkeyword1" value="farm" />
+
+		<parameter name="TMJvalidateMessage"
+			value="Hello, I’m Henriette. Welcome to Up Norway." />
+		<parameter name="magicAppValidation"
+			value="Up Norway's Magic Map" />
+		<parameter name="keyword4" value="a" />
+		<parameter name="currencytype" value="GBP" />
+		<parameter name="shareChannel" value="Facebook" />
+		<parameter name="facebookMessage" value="Facebook" />
+		<parameter name="verifyTopic" value="THE DETAILS:" />
+		<parameter name="expkeyword" value="LOCAL" />
+		<parameter name="verifyExperienceTitle"
+			value="FJORD SKIING IN THE SUNNMØRE ALPS" />
+
+
+			
+
+
+		<parameter name="TMJvalidateMessage"
+			value="Hello, I’m Henriette. Welcome to Up Norway." />
+		<parameter name="magicAppValidation"
+			value="Up Norway's Magic Map" />
+		<parameter name="keyword4" value="a" />
+		<parameter name="currencytype" value="GBP" />
+		<parameter name="shareChannel" value="Facebook" />
+		<parameter name="facebookMessage" value="Facebook" />
+		<parameter name="verifyTopic" value="THE DETAILS:" />
+		<parameter name="expkeyword" value="LOCAL" />
+		<parameter name="verifyExperienceTitle"
+			value="FJORD SKIING IN THE SUNNMØRE ALPS" />
+
+
+		<parameter name="aboutTitle"
+			value="WE’LL TAKE YOU TO THE HEART OF NORWAY" />
+
+		<parameter name="upguidekeyword" value="ai" />
+		<parameter name="TestimonialTitle" value="TESTIMONIALS" />
+		<parameter name="JourneyTitle" value="GIVE ME MØRE!" />
+
+
+		<parameter name="campaignTitle"
+			value="A TASTE OF LOCAL SECRETS" />
+		<parameter name="campaignSuccessMessage"
+			value="Thank you, we will get back to you shortly. A copy of your request has been sent to your email" />
+		<parameter name="campaignTitleJourney"
+			value="DISCOVERY ROUTE ADVENTURES" />
+		<parameter name="campaignJourney"
+			value="THE DISCOVERY ROUTE FAMILY ADVENTURE" />
+
+
+		<parameter name="videoPageTitle" value="UP NORWAY VIDEOS" />
+		<parameter name="videoJourney"
+			value="A ROAD LESS TRAVELLED (FOR NO GOOD REASON) FROM OSLO TO BERGEN" />
+		<parameter name="videoExperience"
+			value="FROM GLASS TO GRASS: URBAN GREEN OSLO" />
+
+
 
 
 		<classes>
+
+
 			<class name="com.upnorway.testcases.Upguides" />
 			<class name="com.upnorway.testcases.Journeys" />
 			<class name="com.upnorway.testcases.Experiences" />
 			<class name="com.upnorway.testcases.General" />
+			<class name="com.upnorway.testcases.About" />
+			<class name="com.upnorway.testcases.Campaign" />
+
+
+
+
+
 		</classes>
 
 	</test>
+
+
+
+
+
+
 </suite> <!-- Suite -->
