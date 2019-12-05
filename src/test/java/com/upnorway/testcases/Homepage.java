@@ -123,4 +123,64 @@ public class Homepage extends TestBase {
 		verifyEqualsIgnoreCase(actualGoogleReviewPage, expectedGoogleReviewPage);
 
 	}
+
+	@Test(enabled = true)
+	@Parameters({ "GooglereviewCount" })
+	public void googleReviewCount(int GooglereviewCount) throws InterruptedException, IOException {
+
+		// Get the count of displayed
+		List<WebElement> reviews = driver.findElements(By.xpath(OR.getProperty("homeGoogleReviewsCount")));
+
+		test.log(LogStatus.INFO, "Number of displayed Google reviews: " + reviews.size());
+
+		// verify the Google Review count is same as expected
+		int actualGoogleReviewCount = reviews.size();
+		int expectedGoogleReviewCount = GooglereviewCount;
+		verifyEquals(actualGoogleReviewCount, expectedGoogleReviewCount);
+
+	}
+
+	@Test(enabled = true)
+	public void googleReviewfiveStars() throws InterruptedException, IOException {
+
+		// Get the count of displayed
+		List<WebElement> reviews = driver.findElements(By.xpath(OR.getProperty("homeGoogleReviewsCount")));
+
+		test.log(LogStatus.INFO, "Number of displayed Google reviews: " + reviews.size());
+
+		// Navigate google reviews using arrow keys
+		for (int i = 0; i < reviews.size(); i++) {
+			// click the arrow button
+			click("homeGoogleReviewsArrow_XPATH");
+			// wait 1 second
+			// Thread.sleep(1000);
+
+			// Check whether the google review has 5 stars or not
+			isElementPresent(By.xpath("homeFiveStar_XPATH"));
+
+		}
+	}
+
+	@Test(enabled = true)
+	public void googleReviewDescription() throws InterruptedException, IOException {
+
+		// Get the count of displayed
+		List<WebElement> reviews = driver.findElements(By.xpath(OR.getProperty("homeGoogleReviewsCount")));
+
+		test.log(LogStatus.INFO, "Number of displayed Google reviews: " + reviews.size());
+
+		// Navigate google reviews using arrow keys
+		for (int i = 0; i < reviews.size(); i++) {
+			// click the arrow button
+			click("homeGoogleReviewsArrow_XPATH");
+			// wait 1 second
+			// Thread.sleep(1000);
+
+			// Verify the google reviews which do not contain description does not display
+			// under the Google review Section
+			isElementPresent(By.xpath("homeGoogleReviewContent_XPATH"));
+
+		}
+	}
+
 }

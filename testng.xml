@@ -37,6 +37,7 @@
 		<parameter name="GoogleReviewTitle" value="GOOGLE REVIEWS" />
 		<parameter name="PressItemTitle" value="AS SEEN IN PRESS" />
 		<parameter name="GoogleReviewPage" value="Up Norway" />
+		<parameter name="GooglereviewCount" value="34" />
 
 
 		<classes>
