@@ -33,7 +33,7 @@
 		<parameter name="enquireErrorMessage"
 			value="Please fill all the required fields" />
 
-    <parameter name="PressItemTitle" value="AS SEEN IN PRESS" />
+		<parameter name="PressItemTitle" value="AS SEEN IN PRESS" />
 		<parameter name="GoogleReviewTitle" value="GOOGLE REVIEWS" />
 		<parameter name="PressItemTitle" value="AS SEEN IN PRESS" />
 		<parameter name="GoogleReviewPage" value="Up Norway" />
@@ -78,7 +78,7 @@
 			value="FJORD SKIING IN THE SUNNMØRE ALPS" />
 
 
-			
+
 
 
 		<parameter name="TMJvalidateMessage"
@@ -118,6 +118,7 @@
 			value="A ROAD LESS TRAVELLED (FOR NO GOOD REASON) FROM OSLO TO BERGEN" />
 		<parameter name="videoExperience"
 			value="FROM GLASS TO GRASS: URBAN GREEN OSLO" />
+		<parameter name="testimonialTitle" value="TESTIMONIALS" />
 
 
 
@@ -131,6 +132,7 @@
 			<class name="com.upnorway.testcases.General" />
 			<class name="com.upnorway.testcases.About" />
 			<class name="com.upnorway.testcases.Campaign" />
+			<class name="com.upnorway.testcases.Testimonials" />
 
 
 
