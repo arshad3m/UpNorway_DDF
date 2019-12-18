@@ -79,7 +79,7 @@ public class Journeys extends TestBase {
 		verifyEquals(numberOfJourneys, cardNames.size());
 
 		// Title of the first card
-		String title_of_first_card = cardNames.get(0).getAttribute("innerHTML");
+		String title_of_first_card = cardNames.get(0).getAttribute("innerText");
 
 		// Click on the first card
 		click(cardNames.get(0));
@@ -88,7 +88,7 @@ public class Journeys extends TestBase {
 		swithToNewTab();
 
 		// Title of the opened page
-		String journey_title = driver.findElement(By.xpath(OR.getProperty("opened_page_title_XPATH"))).getText();
+		String journey_title = driver.findElement(By.xpath(OR.getProperty("opened_page_title_XPATH"))).getAttribute("innerText");
 
 		// Verify title of the opened page is equal to what was retrieved before opening
 		verifyEqualsIgnoreCase(title_of_first_card, journey_title);
