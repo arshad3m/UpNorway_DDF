@@ -20,7 +20,7 @@ public class Upguides extends TestBase {
 	public void search_upguides(String keyword3) throws InterruptedException, IOException {
 
 		// Go to journeys
-		click("upguidesButton_XPATH");
+		click("whyNorwayButton_XPATH");
 
 		// type keyword in search box
 		type("upgSearch_XPATH", keyword3);
@@ -32,6 +32,8 @@ public class Upguides extends TestBase {
 		// select region as South-eastern Norway and season as Sumemr
 		click("upgDestinations_XPATH");
 
+		Thread.sleep(4000);
+		
 		// verify results
 		String searchresultText = driver.findElement(By.xpath(OR.getProperty("upgSearchResultsText_XPATH"))).getText();
 		String resultCountText = driver.findElement(By.xpath(OR.getProperty("upgSearchResultsCount_XPATH")))
@@ -92,7 +94,7 @@ public class Upguides extends TestBase {
 			String count) throws IOException, InterruptedException {
 
 		// Go to up guides
-		click("upguidesButton_XPATH");
+		click("whyNorwayButton_XPATH");
 
 		// the xpath retrieve all the journeys - hidden and visible
 		List<WebElement> cards = driver.findElements(By.xpath(OR.getProperty("upgCards_XPATH")));
@@ -173,7 +175,7 @@ public class Upguides extends TestBase {
 	public void upguide_validateCountsAfterFiltering(String upguidekeyword) throws InterruptedException, IOException {
 
 		// Go to journeys
-		click("upguidesButton_XPATH");
+		click("whyNorwayButton_XPATH");
 		Thread.sleep(3000);
 
 		// select Destinations
@@ -183,11 +185,11 @@ public class Upguides extends TestBase {
 		click("upgInsiders_XPATH");
 
 		Thread.sleep(3000);
-		
+
 		String resultCountText = driver.findElement(By.xpath(OR.getProperty("upgSearchResultsCount_XPATH")))
 				.getAttribute("innerText");
 
-		int numberOfUpGuides = Integer.parseInt(resultCountText.substring(5,7));
+		int numberOfUpGuides = Integer.parseInt(resultCountText.substring(5, 7));
 		// open result
 
 		// the xpath retrieve all the journeys - hidden and visible
@@ -222,12 +224,28 @@ public class Upguides extends TestBase {
 		verifyContains(searchresultText, upguidekeyword);
 
 		// Number of results showing in search results text
-		int numberOfJUpGuidesSearch = Integer.parseInt(searchresultCountText.substring(5,7));
+		int numberOfJUpGuidesSearch = Integer.parseInt(searchresultCountText.substring(5, 7));
 
 		// verifying the count of listed experiences are not more than the default count
 
 		// assertTrue(numberOfExperiences >= numberOfJourneysSearch);
-	verifyGreaterThanCondition(numberOfUpGuides, numberOfJUpGuidesSearch);
+		verifyGreaterThanCondition(numberOfUpGuides, numberOfJUpGuidesSearch);
+
+	}
+
+//validate the menu title WHY NORWAY
+	@Test(enabled = true)
+	@Parameters({ "whyNorway"})
+	public void Validate_WhyNorway(String whyNorway)
+			throws IOException, InterruptedException {
+
+		// Go to up guides
+		click("whyNorwayButton_XPATH");
+
+		// verify the menu name
+		String actualTitle = driver.findElement(By.xpath(OR.getProperty("whyNorwayButton_XPATH"))).getText();
+		String expectedTitle = whyNorway;
+		verifyEqualsIgnoreCase(actualTitle, expectedTitle);
 
 	}
 
