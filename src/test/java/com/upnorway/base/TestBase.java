@@ -7,6 +7,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.text.Normalizer;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
@@ -285,6 +286,9 @@ public class TestBase {
 	 */
 	public static void verifyEqualsIgnoreCase(String expected, String actual) throws IOException {
 
+		expected = Normalizer.normalize(expected, Normalizer.Form.NFKC);
+		actual = Normalizer.normalize(actual, Normalizer.Form.NFKC);
+		
 		try {
 
 			Assert.assertEquals(actual.toLowerCase().trim(), expected.toLowerCase().trim());
@@ -333,6 +337,9 @@ public class TestBase {
 
 	public static void verifyContains(String text, String word) throws IOException {
 		try {
+
+			text = Normalizer.normalize(text, Normalizer.Form.NFKC);
+			word = Normalizer.normalize(word, Normalizer.Form.NFKC);
 
 			assertTrue(text.contains(word));
 			test.log(LogStatus.INFO, "Asserting " + text + "contains: " + word);

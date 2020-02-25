@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 17:33:14,379 DEBUG wire:72 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
 17:33:14,379 DEBUG wire:72 - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_221)[\r][\n]"
 17:33:14,379 DEBUG wire:72 - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
@@ -28902,3 +28903,5 @@
 17:39:05,882 DEBUG devpinoyLogger:515 - test execution completed !!!
 =======
 >>>>>>> master
+=======
+>>>>>>> dfc6d5e9c3c2619fd271e49ad9342de9625c6fa6
