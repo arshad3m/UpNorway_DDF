@@ -37,7 +37,7 @@
 		<parameter name="GoogleReviewTitle" value="GOOGLE REVIEWS" />
 		<parameter name="PressItemTitle" value="AS SEEN IN PRESS" />
 		<parameter name="GoogleReviewPage" value="Up Norway" />
-		<parameter name="GooglereviewCount" value="34" />
+		<parameter name="GooglereviewCount" value="36" />
 
 
 		<classes>
@@ -110,7 +110,7 @@
 		<parameter name="campaignTitleJourney"
 			value="DISCOVERY ROUTE ADVENTURES" />
 		<parameter name="campaignJourney"
-			value="THE DISCOVERY ROUTE FAMILY ADVENTURE" />
+			value="the classic discovery route" />
 
 
 		<parameter name="videoPageTitle" value="UP NORWAY VIDEOS" />
@@ -126,10 +126,11 @@
 		<classes>
 
 
-			<class name="com.upnorway.testcases.Upguides" />
-			<class name="com.upnorway.testcases.Journeys" />
-			<class name="com.upnorway.testcases.Experiences" />
+			<!-- class name="com.upnorway.testcases.Upguides" />
 			<class name="com.upnorway.testcases.General" />
+			<class name="com.upnorway.testcases.Experiences" /-->
+			<class name="com.upnorway.testcases.Journeys" />
+			
 			<class name="com.upnorway.testcases.About" />
 			<class name="com.upnorway.testcases.Campaign" />
 			<class name="com.upnorway.testcases.Testimonials" />

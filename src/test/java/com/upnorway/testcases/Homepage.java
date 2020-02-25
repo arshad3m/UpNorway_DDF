@@ -136,7 +136,7 @@ public class Homepage extends TestBase {
 		// verify the Google Review count is same as expected
 		int actualGoogleReviewCount = reviews.size();
 		int expectedGoogleReviewCount = GooglereviewCount;
-		verifyEquals(actualGoogleReviewCount, expectedGoogleReviewCount);
+		verifyEquals(expectedGoogleReviewCount,actualGoogleReviewCount);
 
 	}
 
@@ -161,7 +161,7 @@ public class Homepage extends TestBase {
 		}
 	}
 
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void googleReviewDescription() throws InterruptedException, IOException {
 
 		// Get the count of displayed

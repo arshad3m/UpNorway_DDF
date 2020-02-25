@@ -69,7 +69,7 @@ public class Campaign extends TestBase {
 		// Verify opened Journey page
 				String actualJourney = driver.findElement(By.xpath(OR.getProperty("campaign_Journey_XPATH"))).getText();
 				String expectedJourney = campaignJourney;
-				verifyEqualsIgnoreCase(actualJourney, expectedJourney);
+				verifyEqualsIgnoreCase( expectedJourney,actualJourney);
 				
 				// Click Enquire button
 				click("campaign_Enquire_XPATH");
