@@ -101,6 +101,8 @@
 		<parameter name="upguidekeyword" value="ai" />
 		<parameter name="TestimonialTitle" value="TESTIMONIALS" />
 		<parameter name="JourneyTitle" value="GIVE ME MØRE!" />
+		<parameter name="whyNorway" value="WHY Norway" />
+		
 
 
 		<parameter name="campaignTitle"
@@ -134,8 +136,6 @@
 			<class name="com.upnorway.testcases.About" />
 			<class name="com.upnorway.testcases.Campaign" />
 			<class name="com.upnorway.testcases.Testimonials" />
-
-
 
 
 
