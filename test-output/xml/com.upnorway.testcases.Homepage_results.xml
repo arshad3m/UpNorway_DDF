@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Home page"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="764.235">
+  <properties />
+  
+  
+            <testcase name="googleReviewCount" time="6.824" classname="com.upnorway.testcases.Homepage" />
+                <testcase name="googleReviews" time="9.054" classname="com.upnorway.testcases.Homepage" />
+                <testcase name="googleReviewfiveStars" time="742.814" classname="com.upnorway.testcases.Homepage" />
+                <testcase name="slidePressItems" time="5.543" classname="com.upnorway.testcases.Homepage" />
+      
+</testsuite>

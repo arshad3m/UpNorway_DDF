@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Home page"
-           tests="1"
+           tests="2"
            failures="0"
            errors="0"
            skipped="0"
-           time="7.148">
+           time="8.834">
   <properties />
   
   
-            <testcase name="send_Enquiry" time="7.148" classname="com.upnorway.testcases.SendEnquiry" />
+            <testcase name="send_Enquiry" time="5.524" classname="com.upnorway.testcases.SendEnquiry" />
+                <testcase name="sendEnquiryWithoutMandatoryFields" time="3.310" classname="com.upnorway.testcases.SendEnquiry" />
       
 </testsuite>

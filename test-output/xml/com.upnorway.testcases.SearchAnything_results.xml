@@ -4,13 +4,13 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="61.980">
+           time="93.063">
   <properties />
   
   
-            <testcase name="search_for_less" time="9.414" classname="com.upnorway.testcases.SearchAnything" />
-                <testcase name="navigate_Pagination" time="14.096" classname="com.upnorway.testcases.SearchAnything" />
-                <testcase name="search_Pagination" time="10.217" classname="com.upnorway.testcases.SearchAnything" />
-                <testcase name="search_for_many" time="28.253" classname="com.upnorway.testcases.SearchAnything" />
+            <testcase name="search_Pagination" time="48.664" classname="com.upnorway.testcases.SearchAnything" />
+                <testcase name="search_for_less" time="8.208" classname="com.upnorway.testcases.SearchAnything" />
+                <testcase name="navigate_Pagination" time="9.379" classname="com.upnorway.testcases.SearchAnything" />
+                <testcase name="search_for_many" time="26.812" classname="com.upnorway.testcases.SearchAnything" />
       
 </testsuite>

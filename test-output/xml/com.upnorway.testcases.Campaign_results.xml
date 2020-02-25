@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Journeys"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="64.224">
+  <properties />
+  
+  
+            <testcase name="campaign_goToJourney" time="34.554" classname="com.upnorway.testcases.Campaign" />
+                <testcase name="campaign_enquireExperience" time="29.670" classname="com.upnorway.testcases.Campaign" />
+      
+</testsuite>

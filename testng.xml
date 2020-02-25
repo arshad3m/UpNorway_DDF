@@ -27,13 +27,17 @@
 		<parameter name="message"
 			value="I would love to travel Norway" />
 		<parameter name="verifyText"
-			value="AUTHENTIC EXPERIENCES FOR THE DISCERNING TRAVELER" />
+			value="A new era of travel curation" />
 		<parameter name="verifyTextContactInfo"
 			value="Please fill out all the required fields." />
 		<parameter name="enquireErrorMessage"
 			value="Please fill all the required fields" />
 
-
+		<parameter name="PressItemTitle" value="AS SEEN IN PRESS" />
+		<parameter name="GoogleReviewTitle" value="GOOGLE REVIEWS" />
+		<parameter name="PressItemTitle" value="AS SEEN IN PRESS" />
+		<parameter name="GoogleReviewPage" value="Up Norway" />
+		<parameter name="GooglereviewCount" value="36" />
 
 
 		<classes>
@@ -42,7 +46,6 @@
 			<class name="com.upnorway.testcases.TailorMyJourney" />
 			<class name="com.upnorway.testcases.SendEnquiry" />
 			<class name="com.upnorway.testcases.SearchAnything" />
-
 
 		</classes>
 
@@ -75,7 +78,7 @@
 			value="FJORD SKIING IN THE SUNNMØRE ALPS" />
 
 
-			
+
 
 
 		<parameter name="TMJvalidateMessage"
@@ -96,6 +99,10 @@
 			value="WE’LL TAKE YOU TO THE HEART OF NORWAY" />
 
 		<parameter name="upguidekeyword" value="ai" />
+		<parameter name="TestimonialTitle" value="TESTIMONIALS" />
+		<parameter name="JourneyTitle" value="GIVE ME MØRE!" />
+		<parameter name="whyNorway" value="WHY Norway" />
+		
 
 
 		<parameter name="campaignTitle"
@@ -105,7 +112,7 @@
 		<parameter name="campaignTitleJourney"
 			value="DISCOVERY ROUTE ADVENTURES" />
 		<parameter name="campaignJourney"
-			value="THE DISCOVERY ROUTE FAMILY ADVENTURE" />
+			value="the classic discovery route" />
 
 
 		<parameter name="videoPageTitle" value="UP NORWAY VIDEOS" />
@@ -113,6 +120,7 @@
 			value="A ROAD LESS TRAVELLED (FOR NO GOOD REASON) FROM OSLO TO BERGEN" />
 		<parameter name="videoExperience"
 			value="FROM GLASS TO GRASS: URBAN GREEN OSLO" />
+		<parameter name="testimonialTitle" value="TESTIMONIALS" />
 
 
 
@@ -120,12 +128,15 @@
 		<classes>
 
 
-			<class name="com.upnorway.testcases.Upguides" />
-			<class name="com.upnorway.testcases.Journeys" />
-			<class name="com.upnorway.testcases.Experiences" />
+			<!-- class name="com.upnorway.testcases.Upguides" />
 			<class name="com.upnorway.testcases.General" />
+			<class name="com.upnorway.testcases.Experiences" /-->
+			<class name="com.upnorway.testcases.Journeys" />
+			
 			<class name="com.upnorway.testcases.About" />
 			<class name="com.upnorway.testcases.Campaign" />
+			<class name="com.upnorway.testcases.Testimonials" />
+
 
 
 		</classes>
