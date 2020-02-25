@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 17:33:14,379 DEBUG wire:72 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
 17:33:14,379 DEBUG wire:72 - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_221)[\r][\n]"
 17:33:14,379 DEBUG wire:72 - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
@@ -28899,3 +28900,5 @@
 17:39:04,501 DEBUG PoolingHttpClientConnectionManager:401 - Closing connections idle longer than 0 SECONDS
 17:39:04,502 DEBUG DefaultManagedHttpClientConnection:81 - http-outgoing-0: Close connection
 17:39:05,882 DEBUG devpinoyLogger:515 - test execution completed !!!
+=======
+>>>>>>> master
