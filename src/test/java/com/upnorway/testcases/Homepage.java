@@ -124,7 +124,7 @@ public class Homepage extends TestBase {
 
 	}
 
-	@Test(enabled = true)
+	@Test(enabled = false)
 	@Parameters({ "GooglereviewCount" })
 	public void googleReviewCount(int GooglereviewCount) throws InterruptedException, IOException {
 

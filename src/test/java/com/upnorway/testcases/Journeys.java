@@ -231,7 +231,7 @@ public class Journeys extends TestBase {
 		// validate Tailor My Journey window
 		String actualTitle = driver.findElement(By.xpath(OR.getProperty("TMJvalidateMessage_XPATH"))).getText();
 		String expectedTitle = TMJvalidateMessage;
-		verifyEqualsIgnoreCase(actualTitle, expectedTitle);
+		verifyEqualsIgnoreCase(expectedTitle,actualTitle);
 
 	}
 
