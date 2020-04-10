@@ -12,11 +12,304 @@
 <body>
 <h1>Home page</h1>
 <p>
-  Test duration: 933.036s
+  Test duration: 1492.381s
 </p>
 
 
 
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.upnorway.testcases.SearchAnything</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  navigate_Pagination
+      </td>
+  <td class="duration">
+    43.549s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"summer"</span><br />
+    
+            <div class="testOutput">
+                        Click to see Screenshot
+                                <a target="_blank" href=Fri_Apr_10_16_13_01_IST_2020.jpg>Screenshot</a>
+                                <br>
+                                <br>
+                                <a target="_blank" href=Fri_Apr_10_16_13_01_IST_2020.jpg><img src=Fri_Apr_10_16_13_01_IST_2020.jpg height=200 width=200></img></a>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[@class=&apos;journey_title&apos;])[1]/h3&quot;}<br/>
+&nbsp; (Session info: chrome=81.0.4044.92)<br/>
+&nbsp; (Driver info: chromedriver=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 20.12 seconds<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;<br/>
+System info: host: &apos;ArshadM&apos;, ip: &apos;10.212.134.204&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:57109}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}), userDataDir=C:\Users\arshadm\AppData\Local\Temp\scoped_dir34260_425411919}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=81.0.4044.92, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]<br/>
+Session ID: 19d36a2c04367fc8037f017208627c11<br/>
+*** Element info: {Using=xpath, value=(//div[@class=&apos;journey_title&apos;])[1]/h3}</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              sun.reflect.GeneratedConstructorAccessor21.newInstance(Unknown Source)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)<br />
+              org.openqa.selenium.By$ByXPath.findElement(By.java:361)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)<br />
+              com.upnorway.testcases.SearchAnything.navigate_Pagination(SearchAnything.java:203)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:645)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:782)<br />
+              org.testng.TestRunner.run(TestRunner.java:632)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:366)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:268)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1169)<br />
+              org.testng.TestNG.run(TestNG.java:1064)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  search_for_less
+      </td>
+  <td class="duration">
+    94.494s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"drifting"</span><br />
+    
+            <div class="testOutput">
+                        Click to see Screenshot
+                                <a target="_blank" href=Fri_Apr_10_16_17_53_IST_2020.jpg>Screenshot</a>
+                                <br>
+                                <br>
+                                <a target="_blank" href=Fri_Apr_10_16_17_53_IST_2020.jpg><img src=Fri_Apr_10_16_17_53_IST_2020.jpg height=200 width=200></img></a>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[@class=&apos;journey_title&apos;])[1]/h3&quot;}<br/>
+&nbsp; (Session info: chrome=81.0.4044.92)<br/>
+&nbsp; (Driver info: chromedriver=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 20.10 seconds<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;<br/>
+System info: host: &apos;ArshadM&apos;, ip: &apos;10.212.134.204&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:57109}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}), userDataDir=C:\Users\arshadm\AppData\Local\Temp\scoped_dir34260_425411919}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=81.0.4044.92, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]<br/>
+Session ID: 19d36a2c04367fc8037f017208627c11<br/>
+*** Element info: {Using=xpath, value=(//div[@class=&apos;journey_title&apos;])[1]/h3}</b></a><br />
+    <div class="stackTrace" id="exception-1">
+              sun.reflect.GeneratedConstructorAccessor21.newInstance(Unknown Source)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)<br />
+              org.openqa.selenium.By$ByXPath.findElement(By.java:361)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)<br />
+              com.upnorway.testcases.SearchAnything.search_for_less(SearchAnything.java:94)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:645)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:782)<br />
+              org.testng.TestRunner.run(TestRunner.java:632)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:366)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:268)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1169)<br />
+              org.testng.TestNG.run(TestNG.java:1064)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)<br />
+                </div>
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.upnorway.testcases.TailorMyJourney</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  tailorMyJourney_ValidationCheck
+      </td>
+  <td class="duration">
+    73.315s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"Donald", "Trump", "44 years young", "dana@ufc.com", "0097444667", "31st of December 2030", "4", "Enterprenuer", "9", "United States of America"</span><br />
+    
+            <div class="testOutput">
+                        Click to see Screenshot
+                                <a target="_blank" href=Fri_Apr_10_16_09_44_IST_2020.jpg>Screenshot</a>
+                                <br>
+                                <br>
+                                <a target="_blank" href=Fri_Apr_10_16_09_44_IST_2020.jpg><img src=Fri_Apr_10_16_09_44_IST_2020.jpg height=200 width=200></img></a>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//strong[text()=&apos;The Great Outdoors&apos;]&quot;}<br/>
+&nbsp; (Session info: chrome=81.0.4044.92)<br/>
+&nbsp; (Driver info: chromedriver=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 20.10 seconds<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;<br/>
+System info: host: &apos;ArshadM&apos;, ip: &apos;10.212.134.204&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:57109}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}), userDataDir=C:\Users\arshadm\AppData\Local\Temp\scoped_dir34260_425411919}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=81.0.4044.92, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]<br/>
+Session ID: 19d36a2c04367fc8037f017208627c11<br/>
+*** Element info: {Using=xpath, value=//strong[text()=&apos;The Great Outdoors&apos;]}</b></a><br />
+    <div class="stackTrace" id="exception-2">
+              sun.reflect.GeneratedConstructorAccessor21.newInstance(Unknown Source)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)<br />
+              org.openqa.selenium.By$ByXPath.findElement(By.java:361)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)<br />
+              com.upnorway.base.TestBase.click(TestBase.java:181)<br />
+              com.upnorway.testcases.TailorMyJourney.tailorMyJourney_ValidationCheck(TailorMyJourney.java:102)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:645)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:782)<br />
+              org.testng.TestRunner.run(TestRunner.java:632)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:366)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:268)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1169)<br />
+              org.testng.TestNG.run(TestNG.java:1064)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  testTailorMyJourneyContactInfoValidating
+      </td>
+  <td class="duration">
+    46.976s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"Donald", "Trump", "44 years young", "dana@ufc.com", "0097444667", "31st of December 2030", "4", "Enterprenuer", "9", "United States of America", "Please fill out all the required fields."</span><br />
+    
+            <div class="testOutput">
+                        Click to see Screenshot
+                                <a target="_blank" href=Fri_Apr_10_16_11_46_IST_2020.jpg>Screenshot</a>
+                                <br>
+                                <br>
+                                <a target="_blank" href=Fri_Apr_10_16_11_46_IST_2020.jpg><img src=Fri_Apr_10_16_11_46_IST_2020.jpg height=200 width=200></img></a>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-3', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;#Autumn&apos;]&quot;}<br/>
+&nbsp; (Session info: chrome=81.0.4044.92)<br/>
+&nbsp; (Driver info: chromedriver=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 20.07 seconds<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;<br/>
+System info: host: &apos;ArshadM&apos;, ip: &apos;10.212.134.204&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:57109}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}), userDataDir=C:\Users\arshadm\AppData\Local\Temp\scoped_dir34260_425411919}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=81.0.4044.92, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]<br/>
+Session ID: 19d36a2c04367fc8037f017208627c11<br/>
+*** Element info: {Using=xpath, value=//div[@id=&apos;#Autumn&apos;]}</b></a><br />
+    <div class="stackTrace" id="exception-3">
+              sun.reflect.GeneratedConstructorAccessor21.newInstance(Unknown Source)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)<br />
+              org.openqa.selenium.By$ByXPath.findElement(By.java:361)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)<br />
+              com.upnorway.base.TestBase.click(TestBase.java:181)<br />
+              com.upnorway.testcases.TailorMyJourney.testTailorMyJourneyContactInfoValidating(TailorMyJourney.java:299)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:645)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:782)<br />
+              org.testng.TestRunner.run(TestRunner.java:632)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:366)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:268)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1169)<br />
+              org.testng.TestNG.run(TestNG.java:1064)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)<br />
+                </div>
+      </td>
+</tr>
+      </table>
 
 
   <table class="resultsTable">
@@ -30,17 +323,17 @@
                   googleReviewCount
       </td>
   <td class="duration">
-    6.824s
+    15.452s
   </td>
   <td class="result">
         
-          <i>Method arguments: </i><span class="arguments">34</span><br />
+          <i>Method arguments: </i><span class="arguments">36</span><br />
     
             <div class="testOutput">
-                        &lt;br&gt;Verification failure : expected [36] but found [34]&lt;br&gt;<br />
-                                &lt;a target=&quot;_blank&quot; href=Mon_Feb_24_17_19_21_IST_2020.jpg&gt;&lt;img src=Mon_Feb_24_17_19_21_IST_2020.jpg height=200 width=200&gt;&lt;/img&gt;&lt;/a&gt;<br />
-                                &lt;br&gt;<br />
-                                &lt;br&gt;<br />
+                        <br>Verification failure : expected [36] but found [37]<br>
+                                <a target="_blank" href=Fri_Apr_10_15_53_07_IST_2020.jpg><img src=Fri_Apr_10_15_53_07_IST_2020.jpg height=200 width=200></img></a>
+                                <br>
+                                <br>
                   </div>
     
 
@@ -51,7 +344,7 @@
                   googleReviewfiveStars
       </td>
   <td class="duration">
-    742.814s
+    778.190s
   </td>
   <td class="result">
         
@@ -65,7 +358,7 @@
                   googleReviews
       </td>
   <td class="duration">
-    9.054s
+    29.871s
   </td>
   <td class="result">
         
@@ -80,7 +373,7 @@
                   slidePressItems
       </td>
   <td class="duration">
-    5.543s
+    18.833s
   </td>
   <td class="result">
         
@@ -96,44 +389,14 @@
             
 <tr>
   <td class="method">
-                  navigate_Pagination
-      </td>
-  <td class="duration">
-    9.379s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">"summer"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
                   search_Pagination
       </td>
   <td class="duration">
-    48.664s
+    81.080s
   </td>
   <td class="result">
         
           <i>Method arguments: </i><span class="arguments">"summer"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  search_for_less
-      </td>
-  <td class="duration">
-    8.208s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">"drifting"</span><br />
     
         
 
@@ -144,7 +407,7 @@
                   search_for_many
       </td>
   <td class="duration">
-    26.812s
+    87.969s
   </td>
   <td class="result">
         
@@ -163,7 +426,7 @@
                   sendEnquiryWithoutMandatoryFields
       </td>
   <td class="duration">
-    3.310s
+    5.572s
   </td>
   <td class="result">
         
@@ -178,7 +441,7 @@
                   send_Enquiry
       </td>
   <td class="duration">
-    5.524s
+    14.924s
   </td>
   <td class="result">
         
@@ -197,7 +460,7 @@
                   send_Enquiry
       </td>
   <td class="duration">
-    8.030s
+    29.275s
   </td>
   <td class="result">
         
@@ -209,25 +472,10 @@
 </tr>
 <tr>
   <td class="method">
-                  tailorMyJourney_ValidationCheck
-      </td>
-  <td class="duration">
-    16.972s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">"Donald", "Trump", "44 years young", "dana@ufc.com", "0097444667", "31st of December 2030", "4", "Enterprenuer", "9", "United States of America"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
                   testTailorMyJourenyBackToHome
       </td>
   <td class="duration">
-    4.013s
+    19.219s
   </td>
   <td class="result">
         
@@ -242,26 +490,11 @@
                   testTailorMyJourenyUPNorwayLogo
       </td>
   <td class="duration">
-    4.374s
+    35.296s
   </td>
   <td class="result">
         
           <i>Method arguments: </i><span class="arguments">"Donald", "A new era of travel curation"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  testTailorMyJourneyContactInfoValidating
-      </td>
-  <td class="duration">
-    12.306s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">"Donald", "Trump", "44 years young", "dana@ufc.com", "0097444667", "31st of December 2030", "4", "Enterprenuer", "9", "United States of America", "Please fill out all the required fields."</span><br />
     
         
 

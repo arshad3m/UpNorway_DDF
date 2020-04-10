@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="5.138">
+           time="7.239">
   <properties />
   
   
-            <testcase name="navigateToTestimonials" time="5.138" classname="com.upnorway.testcases.Testimonials" />
+            <testcase name="navigateToTestimonials" time="7.239" classname="com.upnorway.testcases.Testimonials" />
       
 </testsuite>

@@ -1,11 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="26" passed="26">
+<testng-results skipped="0" failed="4" total="26" passed="22">
   <reporter-output>
     <line>
-      <![CDATA[<br>Verification failure : expected [36] but found [34]<br>]]>
+      <![CDATA[<br>Verification failure : expected [36] but found [37]<br>]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank" href=Mon_Feb_24_17_19_21_IST_2020.jpg><img src=Mon_Feb_24_17_19_21_IST_2020.jpg height=200 width=200></img></a>]]>
+      <![CDATA[<a target="_blank" href=Fri_Apr_10_15_53_07_IST_2020.jpg><img src=Fri_Apr_10_15_53_07_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Fri_Apr_10_16_09_44_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Fri_Apr_10_16_09_44_IST_2020.jpg><img src=Fri_Apr_10_16_09_44_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Fri_Apr_10_16_11_46_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Fri_Apr_10_16_11_46_IST_2020.jpg><img src=Fri_Apr_10_16_11_46_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Fri_Apr_10_16_13_01_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Fri_Apr_10_16_13_01_IST_2020.jpg><img src=Fri_Apr_10_16_13_01_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Fri_Apr_10_16_17_53_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Fri_Apr_10_16_17_53_IST_2020.jpg><img src=Fri_Apr_10_16_17_53_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>Verification failure : expected [let it go! explore frozen magic in anna &amp; elsa’s footsteps] but found [let it go! explore frozen magic in anna & elsa’s footsteps]<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Fri_Apr_10_16_19_46_IST_2020.jpg><img src=Fri_Apr_10_16_19_46_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>Verification failure : expected [.] but found [hello, i’m henriette. welcome to up norway.]<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Fri_Apr_10_16_20_46_IST_2020.jpg><img src=Fri_Apr_10_16_20_46_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>Verification failure : expected [the classic discovery route] but found [the upscaled discovery route]<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Fri_Apr_10_16_24_25_IST_2020.jpg><img src=Fri_Apr_10_16_24_25_IST_2020.jpg height=200 width=200></img></a>]]>
     </line>
     <line>
       <![CDATA[<br>]]>
@@ -14,16 +110,16 @@
       <![CDATA[<br>]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="1190698" started-at="2020-02-24T11:49:13Z" finished-at="2020-02-24T12:09:04Z">
+  <suite name="Suite" duration-ms="1934927" started-at="2020-04-10T10:22:50Z" finished-at="2020-04-10T10:55:05Z">
     <groups>
     </groups>
-    <test name="Home page" duration-ms="933905" started-at="2020-02-24T11:49:13Z" finished-at="2020-02-24T12:04:47Z">
+    <test name="Home page" duration-ms="1502701" started-at="2020-04-10T10:22:50Z" finished-at="2020-04-10T10:47:53Z">
       <class name="com.upnorway.testcases.TailorMyJourney">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.TailorMyJourney@7e7be63f]" name="beforeTest" is-config="true" duration-ms="971" started-at="2020-02-24T17:32:07Z" finished-at="2020-02-24T17:32:08Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.TailorMyJourney@7e7be63f]" name="beforeTest" is-config="true" duration-ms="3608" started-at="2020-04-10T16:07:43Z" finished-at="2020-04-10T16:07:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="send_Enquiry(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.upnorway.testcases.TailorMyJourney@7e7be63f]" name="send_Enquiry" duration-ms="8030" started-at="2020-02-24T17:32:08Z" finished-at="2020-02-24T17:32:16Z">
+        <test-method status="PASS" signature="send_Enquiry(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.upnorway.testcases.TailorMyJourney@7e7be63f]" name="send_Enquiry" duration-ms="29275" started-at="2020-04-10T16:07:47Z" finished-at="2020-04-10T16:08:16Z">
           <params>
             <param index="0">
               <value>
@@ -49,11 +145,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- send_Enquiry -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.TailorMyJourney@7e7be63f]" name="beforeTest" is-config="true" duration-ms="964" started-at="2020-02-24T17:32:16Z" finished-at="2020-02-24T17:32:17Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.TailorMyJourney@7e7be63f]" name="beforeTest" is-config="true" duration-ms="11489" started-at="2020-04-10T16:08:16Z" finished-at="2020-04-10T16:08:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="tailorMyJourney_ValidationCheck(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.upnorway.testcases.TailorMyJourney@7e7be63f]" name="tailorMyJourney_ValidationCheck" duration-ms="16972" started-at="2020-02-24T17:32:17Z" finished-at="2020-02-24T17:32:34Z">
+        <test-method status="FAIL" signature="tailorMyJourney_ValidationCheck(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.upnorway.testcases.TailorMyJourney@7e7be63f]" name="tailorMyJourney_ValidationCheck" duration-ms="73315" started-at="2020-04-10T16:08:28Z" finished-at="2020-04-10T16:09:41Z">
           <params>
             <param index="0">
               <value>
@@ -106,14 +202,94 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//strong[text()='The Great Outdoors']"}
+  (Session info: chrome=81.0.4044.92)
+  (Driver info: chromedriver=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.10 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'ArshadM', ip: '10.212.134.204', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:57109}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}), userDataDir=C:\Users\arshadm\AppData\Local\Temp\scoped_dir34260_425411919}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=81.0.4044.92, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 19d36a2c04367fc8037f017208627c11
+*** Element info: {Using=xpath, value=//strong[text()='The Great Outdoors']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//strong[text()='The Great Outdoors']"}
+  (Session info: chrome=81.0.4044.92)
+  (Driver info: chromedriver=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.10 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'ArshadM', ip: '10.212.134.204', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:57109}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}), userDataDir=C:\Users\arshadm\AppData\Local\Temp\scoped_dir34260_425411919}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=81.0.4044.92, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 19d36a2c04367fc8037f017208627c11
+*** Element info: {Using=xpath, value=//strong[text()='The Great Outdoors']}
+	at sun.reflect.GeneratedConstructorAccessor21.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.upnorway.base.TestBase.click(TestBase.java:181)
+	at com.upnorway.testcases.TailorMyJourney.tailorMyJourney_ValidationCheck(TailorMyJourney.java:102)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Fri_Apr_10_16_09_44_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Fri_Apr_10_16_09_44_IST_2020.jpg><img src=Fri_Apr_10_16_09_44_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
           </reporter-output>
         </test-method> <!-- tailorMyJourney_ValidationCheck -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.TailorMyJourney@7e7be63f]" name="beforeTest" is-config="true" duration-ms="995" started-at="2020-02-24T17:32:34Z" finished-at="2020-02-24T17:32:35Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.TailorMyJourney@7e7be63f]" name="beforeTest" is-config="true" duration-ms="4946" started-at="2020-04-10T16:09:44Z" finished-at="2020-04-10T16:09:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="testTailorMyJourenyBackToHome(java.lang.String, java.lang.String)[pri:0, instance:com.upnorway.testcases.TailorMyJourney@7e7be63f]" name="testTailorMyJourenyBackToHome" duration-ms="4013" started-at="2020-02-24T17:32:35Z" finished-at="2020-02-24T17:32:39Z">
+        <test-method status="PASS" signature="testTailorMyJourenyBackToHome(java.lang.String, java.lang.String)[pri:0, instance:com.upnorway.testcases.TailorMyJourney@7e7be63f]" name="testTailorMyJourenyBackToHome" duration-ms="19219" started-at="2020-04-10T16:09:49Z" finished-at="2020-04-10T16:10:08Z">
           <params>
             <param index="0">
               <value>
@@ -129,11 +305,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTailorMyJourenyBackToHome -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.TailorMyJourney@7e7be63f]" name="beforeTest" is-config="true" duration-ms="868" started-at="2020-02-24T17:32:39Z" finished-at="2020-02-24T17:32:40Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.TailorMyJourney@7e7be63f]" name="beforeTest" is-config="true" duration-ms="10468" started-at="2020-04-10T16:10:08Z" finished-at="2020-04-10T16:10:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="testTailorMyJourenyUPNorwayLogo(java.lang.String, java.lang.String)[pri:0, instance:com.upnorway.testcases.TailorMyJourney@7e7be63f]" name="testTailorMyJourenyUPNorwayLogo" duration-ms="4374" started-at="2020-02-24T17:32:40Z" finished-at="2020-02-24T17:32:44Z">
+        <test-method status="PASS" signature="testTailorMyJourenyUPNorwayLogo(java.lang.String, java.lang.String)[pri:0, instance:com.upnorway.testcases.TailorMyJourney@7e7be63f]" name="testTailorMyJourenyUPNorwayLogo" duration-ms="35296" started-at="2020-04-10T16:10:19Z" finished-at="2020-04-10T16:10:54Z">
           <params>
             <param index="0">
               <value>
@@ -149,11 +325,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTailorMyJourenyUPNorwayLogo -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.TailorMyJourney@7e7be63f]" name="beforeTest" is-config="true" duration-ms="954" started-at="2020-02-24T17:32:44Z" finished-at="2020-02-24T17:32:45Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.TailorMyJourney@7e7be63f]" name="beforeTest" is-config="true" duration-ms="3639" started-at="2020-04-10T16:10:54Z" finished-at="2020-04-10T16:10:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="testTailorMyJourneyContactInfoValidating(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.upnorway.testcases.TailorMyJourney@7e7be63f]" name="testTailorMyJourneyContactInfoValidating" duration-ms="12306" started-at="2020-02-24T17:32:45Z" finished-at="2020-02-24T17:32:58Z">
+        <test-method status="FAIL" signature="testTailorMyJourneyContactInfoValidating(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.upnorway.testcases.TailorMyJourney@7e7be63f]" name="testTailorMyJourneyContactInfoValidating" duration-ms="46976" started-at="2020-04-10T16:10:58Z" finished-at="2020-04-10T16:11:45Z">
           <params>
             <param index="0">
               <value>
@@ -211,16 +387,96 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='#Autumn']"}
+  (Session info: chrome=81.0.4044.92)
+  (Driver info: chromedriver=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'ArshadM', ip: '10.212.134.204', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:57109}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}), userDataDir=C:\Users\arshadm\AppData\Local\Temp\scoped_dir34260_425411919}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=81.0.4044.92, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 19d36a2c04367fc8037f017208627c11
+*** Element info: {Using=xpath, value=//div[@id='#Autumn']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='#Autumn']"}
+  (Session info: chrome=81.0.4044.92)
+  (Driver info: chromedriver=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'ArshadM', ip: '10.212.134.204', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:57109}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}), userDataDir=C:\Users\arshadm\AppData\Local\Temp\scoped_dir34260_425411919}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=81.0.4044.92, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 19d36a2c04367fc8037f017208627c11
+*** Element info: {Using=xpath, value=//div[@id='#Autumn']}
+	at sun.reflect.GeneratedConstructorAccessor21.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.upnorway.base.TestBase.click(TestBase.java:181)
+	at com.upnorway.testcases.TailorMyJourney.testTailorMyJourneyContactInfoValidating(TailorMyJourney.java:299)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Fri_Apr_10_16_11_46_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Fri_Apr_10_16_11_46_IST_2020.jpg><img src=Fri_Apr_10_16_11_46_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
           </reporter-output>
         </test-method> <!-- testTailorMyJourneyContactInfoValidating -->
       </class> <!-- com.upnorway.testcases.TailorMyJourney -->
       <class name="com.upnorway.testcases.SearchAnything">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.SearchAnything@614ca7df]" name="beforeTest" is-config="true" duration-ms="1068" started-at="2020-02-24T17:33:09Z" finished-at="2020-02-24T17:33:10Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.SearchAnything@614ca7df]" name="beforeTest" is-config="true" duration-ms="2448" started-at="2020-04-10T16:12:14Z" finished-at="2020-04-10T16:12:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="navigate_Pagination(java.lang.String)[pri:0, instance:com.upnorway.testcases.SearchAnything@614ca7df]" name="navigate_Pagination" duration-ms="9379" started-at="2020-02-24T17:33:10Z" finished-at="2020-02-24T17:33:19Z">
+        <test-method status="FAIL" signature="navigate_Pagination(java.lang.String)[pri:0, instance:com.upnorway.testcases.SearchAnything@614ca7df]" name="navigate_Pagination" duration-ms="43549" started-at="2020-04-10T16:12:17Z" finished-at="2020-04-10T16:13:00Z">
           <params>
             <param index="0">
               <value>
@@ -228,14 +484,93 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='journey_title'])[1]/h3"}
+  (Session info: chrome=81.0.4044.92)
+  (Driver info: chromedriver=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.12 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'ArshadM', ip: '10.212.134.204', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:57109}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}), userDataDir=C:\Users\arshadm\AppData\Local\Temp\scoped_dir34260_425411919}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=81.0.4044.92, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 19d36a2c04367fc8037f017208627c11
+*** Element info: {Using=xpath, value=(//div[@class='journey_title'])[1]/h3}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='journey_title'])[1]/h3"}
+  (Session info: chrome=81.0.4044.92)
+  (Driver info: chromedriver=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.12 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'ArshadM', ip: '10.212.134.204', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:57109}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}), userDataDir=C:\Users\arshadm\AppData\Local\Temp\scoped_dir34260_425411919}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=81.0.4044.92, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 19d36a2c04367fc8037f017208627c11
+*** Element info: {Using=xpath, value=(//div[@class='journey_title'])[1]/h3}
+	at sun.reflect.GeneratedConstructorAccessor21.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.upnorway.testcases.SearchAnything.navigate_Pagination(SearchAnything.java:203)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Fri_Apr_10_16_13_01_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Fri_Apr_10_16_13_01_IST_2020.jpg><img src=Fri_Apr_10_16_13_01_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
           </reporter-output>
         </test-method> <!-- navigate_Pagination -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.SearchAnything@614ca7df]" name="beforeTest" is-config="true" duration-ms="1126" started-at="2020-02-24T17:33:19Z" finished-at="2020-02-24T17:33:21Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.SearchAnything@614ca7df]" name="beforeTest" is-config="true" duration-ms="7334" started-at="2020-04-10T16:13:01Z" finished-at="2020-04-10T16:13:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="search_Pagination(java.lang.String)[pri:0, instance:com.upnorway.testcases.SearchAnything@614ca7df]" name="search_Pagination" duration-ms="48664" started-at="2020-02-24T17:33:21Z" finished-at="2020-02-24T17:34:09Z">
+        <test-method status="PASS" signature="search_Pagination(java.lang.String)[pri:0, instance:com.upnorway.testcases.SearchAnything@614ca7df]" name="search_Pagination" duration-ms="81080" started-at="2020-04-10T16:13:08Z" finished-at="2020-04-10T16:14:29Z">
           <params>
             <param index="0">
               <value>
@@ -246,11 +581,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search_Pagination -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.SearchAnything@614ca7df]" name="beforeTest" is-config="true" duration-ms="1464" started-at="2020-02-24T17:34:09Z" finished-at="2020-02-24T17:34:11Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.SearchAnything@614ca7df]" name="beforeTest" is-config="true" duration-ms="5549" started-at="2020-04-10T16:14:29Z" finished-at="2020-04-10T16:14:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="search_for_many(java.lang.String)[pri:1, instance:com.upnorway.testcases.SearchAnything@614ca7df]" name="search_for_many" duration-ms="26812" started-at="2020-02-24T17:34:11Z" finished-at="2020-02-24T17:34:37Z">
+        <test-method status="PASS" signature="search_for_many(java.lang.String)[pri:1, instance:com.upnorway.testcases.SearchAnything@614ca7df]" name="search_for_many" duration-ms="87969" started-at="2020-04-10T16:14:35Z" finished-at="2020-04-10T16:16:03Z">
           <params>
             <param index="0">
               <value>
@@ -261,11 +596,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search_for_many -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.SearchAnything@614ca7df]" name="beforeTest" is-config="true" duration-ms="1304" started-at="2020-02-24T17:34:38Z" finished-at="2020-02-24T17:34:39Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.SearchAnything@614ca7df]" name="beforeTest" is-config="true" duration-ms="11247" started-at="2020-04-10T16:16:03Z" finished-at="2020-04-10T16:16:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="search_for_less(java.lang.String)[pri:2, instance:com.upnorway.testcases.SearchAnything@614ca7df]" name="search_for_less" duration-ms="8208" started-at="2020-02-24T17:34:39Z" finished-at="2020-02-24T17:34:47Z">
+        <test-method status="FAIL" signature="search_for_less(java.lang.String)[pri:2, instance:com.upnorway.testcases.SearchAnything@614ca7df]" name="search_for_less" duration-ms="94494" started-at="2020-04-10T16:16:14Z" finished-at="2020-04-10T16:17:49Z">
           <params>
             <param index="0">
               <value>
@@ -273,29 +608,108 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='journey_title'])[1]/h3"}
+  (Session info: chrome=81.0.4044.92)
+  (Driver info: chromedriver=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.10 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'ArshadM', ip: '10.212.134.204', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:57109}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}), userDataDir=C:\Users\arshadm\AppData\Local\Temp\scoped_dir34260_425411919}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=81.0.4044.92, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 19d36a2c04367fc8037f017208627c11
+*** Element info: {Using=xpath, value=(//div[@class='journey_title'])[1]/h3}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='journey_title'])[1]/h3"}
+  (Session info: chrome=81.0.4044.92)
+  (Driver info: chromedriver=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.10 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'ArshadM', ip: '10.212.134.204', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:57109}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}), userDataDir=C:\Users\arshadm\AppData\Local\Temp\scoped_dir34260_425411919}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=81.0.4044.92, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 19d36a2c04367fc8037f017208627c11
+*** Element info: {Using=xpath, value=(//div[@class='journey_title'])[1]/h3}
+	at sun.reflect.GeneratedConstructorAccessor21.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.upnorway.testcases.SearchAnything.search_for_less(SearchAnything.java:94)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Fri_Apr_10_16_17_53_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Fri_Apr_10_16_17_53_IST_2020.jpg><img src=Fri_Apr_10_16_17_53_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
           </reporter-output>
         </test-method> <!-- search_for_less -->
       </class> <!-- com.upnorway.testcases.SearchAnything -->
       <class name="com.upnorway.testcases.Homepage">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.Homepage@5acf93bb]" name="beforeTest" is-config="true" duration-ms="1401" started-at="2020-02-24T17:19:13Z" finished-at="2020-02-24T17:19:15Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.Homepage@5acf93bb]" name="beforeTest" is-config="true" duration-ms="1233" started-at="2020-04-10T15:52:50Z" finished-at="2020-04-10T15:52:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="googleReviewCount(int)[pri:0, instance:com.upnorway.testcases.Homepage@5acf93bb]" name="googleReviewCount" duration-ms="6824" started-at="2020-02-24T17:19:15Z" finished-at="2020-02-24T17:19:21Z">
+        <test-method status="PASS" signature="googleReviewCount(int)[pri:0, instance:com.upnorway.testcases.Homepage@5acf93bb]" name="googleReviewCount" duration-ms="15452" started-at="2020-04-10T15:52:51Z" finished-at="2020-04-10T15:53:07Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[34]]>
+                <![CDATA[36]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[<br>Verification failure : expected [36] but found [34]<br>]]>
+              <![CDATA[<br>Verification failure : expected [36] but found [37]<br>]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank" href=Mon_Feb_24_17_19_21_IST_2020.jpg><img src=Mon_Feb_24_17_19_21_IST_2020.jpg height=200 width=200></img></a>]]>
+              <![CDATA[<a target="_blank" href=Fri_Apr_10_15_53_07_IST_2020.jpg><img src=Fri_Apr_10_15_53_07_IST_2020.jpg height=200 width=200></img></a>]]>
             </line>
             <line>
               <![CDATA[<br>]]>
@@ -305,19 +719,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- googleReviewCount -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.Homepage@5acf93bb]" name="beforeTest" is-config="true" duration-ms="1946" started-at="2020-02-24T17:19:22Z" finished-at="2020-02-24T17:19:24Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.Homepage@5acf93bb]" name="beforeTest" is-config="true" duration-ms="38731" started-at="2020-04-10T15:53:08Z" finished-at="2020-04-10T15:53:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="googleReviewfiveStars()[pri:0, instance:com.upnorway.testcases.Homepage@5acf93bb]" name="googleReviewfiveStars" duration-ms="742814" started-at="2020-02-24T17:19:24Z" finished-at="2020-02-24T17:31:47Z">
+        <test-method status="PASS" signature="googleReviewfiveStars()[pri:0, instance:com.upnorway.testcases.Homepage@5acf93bb]" name="googleReviewfiveStars" duration-ms="778190" started-at="2020-04-10T15:53:46Z" finished-at="2020-04-10T16:06:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- googleReviewfiveStars -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.Homepage@5acf93bb]" name="beforeTest" is-config="true" duration-ms="3286" started-at="2020-02-24T17:31:47Z" finished-at="2020-02-24T17:31:50Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.Homepage@5acf93bb]" name="beforeTest" is-config="true" duration-ms="3531" started-at="2020-04-10T16:06:45Z" finished-at="2020-04-10T16:06:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="googleReviews(java.lang.String, java.lang.String)[pri:0, instance:com.upnorway.testcases.Homepage@5acf93bb]" name="googleReviews" duration-ms="9054" started-at="2020-02-24T17:31:50Z" finished-at="2020-02-24T17:31:59Z">
+        <test-method status="PASS" signature="googleReviews(java.lang.String, java.lang.String)[pri:0, instance:com.upnorway.testcases.Homepage@5acf93bb]" name="googleReviews" duration-ms="29871" started-at="2020-04-10T16:06:48Z" finished-at="2020-04-10T16:07:18Z">
           <params>
             <param index="0">
               <value>
@@ -333,11 +747,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- googleReviews -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.Homepage@5acf93bb]" name="beforeTest" is-config="true" duration-ms="2522" started-at="2020-02-24T17:31:59Z" finished-at="2020-02-24T17:32:01Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.Homepage@5acf93bb]" name="beforeTest" is-config="true" duration-ms="6078" started-at="2020-04-10T16:07:18Z" finished-at="2020-04-10T16:07:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="slidePressItems(java.lang.String)[pri:0, instance:com.upnorway.testcases.Homepage@5acf93bb]" name="slidePressItems" duration-ms="5543" started-at="2020-02-24T17:32:01Z" finished-at="2020-02-24T17:32:07Z">
+        <test-method status="PASS" signature="slidePressItems(java.lang.String)[pri:0, instance:com.upnorway.testcases.Homepage@5acf93bb]" name="slidePressItems" duration-ms="18833" started-at="2020-04-10T16:07:24Z" finished-at="2020-04-10T16:07:43Z">
           <params>
             <param index="0">
               <value>
@@ -348,17 +762,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- slidePressItems -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.upnorway.testcases.Homepage@5acf93bb]" name="afterTest" is-config="true" duration-ms="1" started-at="2020-02-24T17:34:47Z" finished-at="2020-02-24T17:34:47Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.upnorway.testcases.Homepage@5acf93bb]" name="afterTest" is-config="true" duration-ms="1" started-at="2020-04-10T16:17:53Z" finished-at="2020-04-10T16:17:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- com.upnorway.testcases.Homepage -->
       <class name="com.upnorway.testcases.SendEnquiry">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.SendEnquiry@6cd28fa7]" name="beforeTest" is-config="true" duration-ms="1135" started-at="2020-02-24T17:32:58Z" finished-at="2020-02-24T17:32:59Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.SendEnquiry@6cd28fa7]" name="beforeTest" is-config="true" duration-ms="4466" started-at="2020-04-10T16:11:46Z" finished-at="2020-04-10T16:11:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="sendEnquiryWithoutMandatoryFields(java.lang.String, java.lang.String)[pri:0, instance:com.upnorway.testcases.SendEnquiry@6cd28fa7]" name="sendEnquiryWithoutMandatoryFields" duration-ms="3310" started-at="2020-02-24T17:32:59Z" finished-at="2020-02-24T17:33:02Z">
+        <test-method status="PASS" signature="sendEnquiryWithoutMandatoryFields(java.lang.String, java.lang.String)[pri:0, instance:com.upnorway.testcases.SendEnquiry@6cd28fa7]" name="sendEnquiryWithoutMandatoryFields" duration-ms="5572" started-at="2020-04-10T16:11:50Z" finished-at="2020-04-10T16:11:56Z">
           <params>
             <param index="0">
               <value>
@@ -374,11 +788,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sendEnquiryWithoutMandatoryFields -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.SendEnquiry@6cd28fa7]" name="beforeTest" is-config="true" duration-ms="1204" started-at="2020-02-24T17:33:02Z" finished-at="2020-02-24T17:33:03Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.SendEnquiry@6cd28fa7]" name="beforeTest" is-config="true" duration-ms="3598" started-at="2020-04-10T16:11:56Z" finished-at="2020-04-10T16:11:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="send_Enquiry(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.upnorway.testcases.SendEnquiry@6cd28fa7]" name="send_Enquiry" duration-ms="5524" started-at="2020-02-24T17:33:03Z" finished-at="2020-02-24T17:33:09Z">
+        <test-method status="PASS" signature="send_Enquiry(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.upnorway.testcases.SendEnquiry@6cd28fa7]" name="send_Enquiry" duration-ms="14924" started-at="2020-04-10T16:11:59Z" finished-at="2020-04-10T16:12:14Z">
           <params>
             <param index="0">
               <value>
@@ -406,13 +820,13 @@
         </test-method> <!-- send_Enquiry -->
       </class> <!-- com.upnorway.testcases.SendEnquiry -->
     </test> <!-- Home page -->
-    <test name="Journeys" duration-ms="256774" started-at="2020-02-24T12:04:47Z" finished-at="2020-02-24T12:09:04Z">
+    <test name="Journeys" duration-ms="432106" started-at="2020-04-10T10:47:53Z" finished-at="2020-04-10T10:55:05Z">
       <class name="com.upnorway.testcases.Testimonials">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.Testimonials@c88a337]" name="beforeTest" is-config="true" duration-ms="1011" started-at="2020-02-24T17:38:58Z" finished-at="2020-02-24T17:38:59Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.Testimonials@c88a337]" name="beforeTest" is-config="true" duration-ms="2167" started-at="2020-04-10T16:24:56Z" finished-at="2020-04-10T16:24:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="navigateToTestimonials(java.lang.String)[pri:0, instance:com.upnorway.testcases.Testimonials@c88a337]" name="navigateToTestimonials" duration-ms="5138" started-at="2020-02-24T17:38:59Z" finished-at="2020-02-24T17:39:04Z">
+        <test-method status="PASS" signature="navigateToTestimonials(java.lang.String)[pri:0, instance:com.upnorway.testcases.Testimonials@c88a337]" name="navigateToTestimonials" duration-ms="7239" started-at="2020-04-10T16:24:58Z" finished-at="2020-04-10T16:25:05Z">
           <params>
             <param index="0">
               <value>
@@ -425,11 +839,11 @@
         </test-method> <!-- navigateToTestimonials -->
       </class> <!-- com.upnorway.testcases.Testimonials -->
       <class name="com.upnorway.testcases.About">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.About@43dac38f]" name="beforeTest" is-config="true" duration-ms="1334" started-at="2020-02-24T17:37:16Z" finished-at="2020-02-24T17:37:18Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.About@43dac38f]" name="beforeTest" is-config="true" duration-ms="3007" started-at="2020-04-10T16:22:36Z" finished-at="2020-04-10T16:22:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="about_JourneyTestimonials(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.upnorway.testcases.About@43dac38f]" name="about_JourneyTestimonials" duration-ms="21646" started-at="2020-02-24T17:37:18Z" finished-at="2020-02-24T17:37:39Z">
+        <test-method status="PASS" signature="about_JourneyTestimonials(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.upnorway.testcases.About@43dac38f]" name="about_JourneyTestimonials" duration-ms="26872" started-at="2020-04-10T16:22:39Z" finished-at="2020-04-10T16:23:06Z">
           <params>
             <param index="0">
               <value>
@@ -450,11 +864,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- about_JourneyTestimonials -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.About@43dac38f]" name="beforeTest" is-config="true" duration-ms="1299" started-at="2020-02-24T17:37:39Z" finished-at="2020-02-24T17:37:41Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.About@43dac38f]" name="beforeTest" is-config="true" duration-ms="2843" started-at="2020-04-10T16:23:06Z" finished-at="2020-04-10T16:23:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="about_getStarted(java.lang.String, java.lang.String)[pri:0, instance:com.upnorway.testcases.About@43dac38f]" name="about_getStarted" duration-ms="10277" started-at="2020-02-24T17:37:41Z" finished-at="2020-02-24T17:37:51Z">
+        <test-method status="PASS" signature="about_getStarted(java.lang.String, java.lang.String)[pri:0, instance:com.upnorway.testcases.About@43dac38f]" name="about_getStarted" duration-ms="13744" started-at="2020-04-10T16:23:09Z" finished-at="2020-04-10T16:23:22Z">
           <params>
             <param index="0">
               <value>
@@ -472,15 +886,15 @@
         </test-method> <!-- about_getStarted -->
       </class> <!-- com.upnorway.testcases.About -->
       <class name="com.upnorway.testcases.Journeys">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.upnorway.testcases.Journeys@d5b810e]" name="setUp" is-config="true" duration-ms="19787" started-at="2020-02-24T17:18:53Z" finished-at="2020-02-24T17:19:13Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.upnorway.testcases.Journeys@d5b810e]" name="setUp" is-config="true" duration-ms="18861" started-at="2020-04-10T15:52:31Z" finished-at="2020-04-10T15:52:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.Journeys@d5b810e]" name="beforeTest" is-config="true" duration-ms="1739" started-at="2020-02-24T17:34:47Z" finished-at="2020-02-24T17:34:49Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.Journeys@d5b810e]" name="beforeTest" is-config="true" duration-ms="10634" started-at="2020-04-10T16:17:53Z" finished-at="2020-04-10T16:18:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="search_journeys(java.lang.String)[pri:1, instance:com.upnorway.testcases.Journeys@d5b810e]" name="search_journeys" duration-ms="17151" started-at="2020-02-24T17:34:49Z" finished-at="2020-02-24T17:35:06Z">
+        <test-method status="PASS" signature="search_journeys(java.lang.String)[pri:1, instance:com.upnorway.testcases.Journeys@d5b810e]" name="search_journeys" duration-ms="39803" started-at="2020-04-10T16:18:04Z" finished-at="2020-04-10T16:18:43Z">
           <params>
             <param index="0">
               <value>
@@ -491,11 +905,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search_journeys -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.Journeys@d5b810e]" name="beforeTest" is-config="true" duration-ms="1465" started-at="2020-02-24T17:35:06Z" finished-at="2020-02-24T17:35:07Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.Journeys@d5b810e]" name="beforeTest" is-config="true" duration-ms="20858" started-at="2020-04-10T16:18:44Z" finished-at="2020-04-10T16:19:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="journey_enquire(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.upnorway.testcases.Journeys@d5b810e]" name="journey_enquire" duration-ms="59537" started-at="2020-02-24T17:35:07Z" finished-at="2020-02-24T17:36:07Z">
+        <test-method status="PASS" signature="journey_enquire(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.upnorway.testcases.Journeys@d5b810e]" name="journey_enquire" duration-ms="90980" started-at="2020-04-10T16:19:04Z" finished-at="2020-04-10T16:20:35Z">
           <params>
             <param index="0">
               <value>
@@ -534,13 +948,25 @@
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[<br>Verification failure : expected [let it go! explore frozen magic in anna &amp; elsa’s footsteps] but found [let it go! explore frozen magic in anna & elsa’s footsteps]<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Fri_Apr_10_16_19_46_IST_2020.jpg><img src=Fri_Apr_10_16_19_46_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
           </reporter-output>
         </test-method> <!-- journey_enquire -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.Journeys@d5b810e]" name="beforeTest" is-config="true" duration-ms="1661" started-at="2020-02-24T17:36:07Z" finished-at="2020-02-24T17:36:09Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.Journeys@d5b810e]" name="beforeTest" is-config="true" duration-ms="2189" started-at="2020-04-10T16:20:35Z" finished-at="2020-04-10T16:20:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="journey_getStarted(java.lang.String)[pri:3, instance:com.upnorway.testcases.Journeys@d5b810e]" name="journey_getStarted" duration-ms="5600" started-at="2020-02-24T17:36:09Z" finished-at="2020-02-24T17:36:14Z">
+        <test-method status="PASS" signature="journey_getStarted(java.lang.String)[pri:3, instance:com.upnorway.testcases.Journeys@d5b810e]" name="journey_getStarted" duration-ms="8713" started-at="2020-04-10T16:20:38Z" finished-at="2020-04-10T16:20:46Z">
           <params>
             <param index="0">
               <value>
@@ -549,13 +975,25 @@
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[<br>Verification failure : expected [.] but found [hello, i’m henriette. welcome to up norway.]<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Fri_Apr_10_16_20_46_IST_2020.jpg><img src=Fri_Apr_10_16_20_46_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
           </reporter-output>
         </test-method> <!-- journey_getStarted -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.Journeys@d5b810e]" name="beforeTest" is-config="true" duration-ms="932" started-at="2020-02-24T17:36:14Z" finished-at="2020-02-24T17:36:15Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.Journeys@d5b810e]" name="beforeTest" is-config="true" duration-ms="11757" started-at="2020-04-10T16:20:46Z" finished-at="2020-04-10T16:20:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="journey_magicMap(java.lang.String)[pri:4, instance:com.upnorway.testcases.Journeys@d5b810e]" name="journey_magicMap" duration-ms="9247" started-at="2020-02-24T17:36:15Z" finished-at="2020-02-24T17:36:25Z">
+        <test-method status="PASS" signature="journey_magicMap(java.lang.String)[pri:4, instance:com.upnorway.testcases.Journeys@d5b810e]" name="journey_magicMap" duration-ms="24383" started-at="2020-04-10T16:20:58Z" finished-at="2020-04-10T16:21:22Z">
           <params>
             <param index="0">
               <value>
@@ -566,11 +1004,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- journey_magicMap -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.Journeys@d5b810e]" name="beforeTest" is-config="true" duration-ms="1823" started-at="2020-02-24T17:36:25Z" finished-at="2020-02-24T17:36:26Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.Journeys@d5b810e]" name="beforeTest" is-config="true" duration-ms="3203" started-at="2020-04-10T16:21:23Z" finished-at="2020-04-10T16:21:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="validateCountsAfterFiltering(java.lang.String)[pri:5, instance:com.upnorway.testcases.Journeys@d5b810e]" name="validateCountsAfterFiltering" duration-ms="10373" started-at="2020-02-24T17:36:26Z" finished-at="2020-02-24T17:36:37Z">
+        <test-method status="PASS" signature="validateCountsAfterFiltering(java.lang.String)[pri:5, instance:com.upnorway.testcases.Journeys@d5b810e]" name="validateCountsAfterFiltering" duration-ms="20821" started-at="2020-04-10T16:21:26Z" finished-at="2020-04-10T16:21:47Z">
           <params>
             <param index="0">
               <value>
@@ -581,11 +1019,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateCountsAfterFiltering -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.Journeys@d5b810e]" name="beforeTest" is-config="true" duration-ms="1299" started-at="2020-02-24T17:36:37Z" finished-at="2020-02-24T17:36:38Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.Journeys@d5b810e]" name="beforeTest" is-config="true" duration-ms="2403" started-at="2020-04-10T16:21:47Z" finished-at="2020-04-10T16:21:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="currencyTypes_price(java.lang.String, java.lang.String)[pri:6, instance:com.upnorway.testcases.Journeys@d5b810e]" name="currencyTypes_price" duration-ms="38101" started-at="2020-02-24T17:36:38Z" finished-at="2020-02-24T17:37:16Z">
+        <test-method status="PASS" signature="currencyTypes_price(java.lang.String, java.lang.String)[pri:6, instance:com.upnorway.testcases.Journeys@d5b810e]" name="currencyTypes_price" duration-ms="46869" started-at="2020-04-10T16:21:49Z" finished-at="2020-04-10T16:22:36Z">
           <params>
             <param index="0">
               <value>
@@ -601,21 +1039,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- currencyTypes_price -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.upnorway.testcases.Journeys@d5b810e]" name="afterTest" is-config="true" duration-ms="0" started-at="2020-02-24T17:39:04Z" finished-at="2020-02-24T17:39:04Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.upnorway.testcases.Journeys@d5b810e]" name="afterTest" is-config="true" duration-ms="0" started-at="2020-04-10T16:25:05Z" finished-at="2020-04-10T16:25:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.upnorway.testcases.Journeys@d5b810e]" name="tearDown" is-config="true" duration-ms="11719" started-at="2020-02-24T17:39:04Z" finished-at="2020-02-24T17:39:16Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.upnorway.testcases.Journeys@d5b810e]" name="tearDown" is-config="true" duration-ms="12910" started-at="2020-04-10T16:25:05Z" finished-at="2020-04-10T16:25:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.upnorway.testcases.Journeys -->
       <class name="com.upnorway.testcases.Campaign">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.Campaign@342c38f8]" name="beforeTest" is-config="true" duration-ms="1440" started-at="2020-02-24T17:37:51Z" finished-at="2020-02-24T17:37:52Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.Campaign@342c38f8]" name="beforeTest" is-config="true" duration-ms="4130" started-at="2020-04-10T16:23:22Z" finished-at="2020-04-10T16:23:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="campaign_enquireExperience(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.upnorway.testcases.Campaign@342c38f8]" name="campaign_enquireExperience" duration-ms="29670" started-at="2020-02-24T17:37:52Z" finished-at="2020-02-24T17:38:22Z">
+        <test-method status="PASS" signature="campaign_enquireExperience(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.upnorway.testcases.Campaign@342c38f8]" name="campaign_enquireExperience" duration-ms="37177" started-at="2020-04-10T16:23:27Z" finished-at="2020-04-10T16:24:04Z">
           <params>
             <param index="0">
               <value>
@@ -661,11 +1099,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- campaign_enquireExperience -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.Campaign@342c38f8]" name="beforeTest" is-config="true" duration-ms="1138" started-at="2020-02-24T17:38:22Z" finished-at="2020-02-24T17:38:23Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.upnorway.testcases.Campaign@342c38f8]" name="beforeTest" is-config="true" duration-ms="2688" started-at="2020-04-10T16:24:04Z" finished-at="2020-04-10T16:24:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="campaign_goToJourney(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.upnorway.testcases.Campaign@342c38f8]" name="campaign_goToJourney" duration-ms="34554" started-at="2020-02-24T17:38:23Z" finished-at="2020-02-24T17:38:58Z">
+        <test-method status="PASS" signature="campaign_goToJourney(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.upnorway.testcases.Campaign@342c38f8]" name="campaign_goToJourney" duration-ms="49158" started-at="2020-04-10T16:24:06Z" finished-at="2020-04-10T16:24:56Z">
           <params>
             <param index="0">
               <value>
@@ -709,6 +1147,18 @@
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[<br>Verification failure : expected [the classic discovery route] but found [the upscaled discovery route]<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Fri_Apr_10_16_24_25_IST_2020.jpg><img src=Fri_Apr_10_16_24_25_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
           </reporter-output>
         </test-method> <!-- campaign_goToJourney -->
       </class> <!-- com.upnorway.testcases.Campaign -->
