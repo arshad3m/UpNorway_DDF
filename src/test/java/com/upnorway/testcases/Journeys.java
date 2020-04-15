@@ -12,6 +12,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Reporter;
 import org.testng.annotations.Parameters;
@@ -226,8 +227,10 @@ public class Journeys extends TestBase {
 
 		// Select Get Started option
 		click("getStartedButton_XPATH");
-		Thread.sleep(3000);
+		
+		Thread.sleep(10000);
 
+		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(OR.getProperty("TMJvalidateMessage_XPATH")))));
 		// validate Tailor My Journey window
 		String actualTitle = driver.findElement(By.xpath(OR.getProperty("TMJvalidateMessage_XPATH"))).getText();
 		String expectedTitle = TMJvalidateMessage;

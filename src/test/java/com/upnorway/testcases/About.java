@@ -3,6 +3,8 @@ package com.upnorway.testcases;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -31,6 +33,8 @@ public class About extends TestBase {
 
 		// validate get started window
 		Thread.sleep(3000);
+		
+		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(OR.getProperty("TMJvalidateMessage_XPATH")))));
 
 		String actualGetStartedTitle = driver.findElement(By.xpath(OR.getProperty("TMJvalidateMessage_XPATH")))
 				.getText();

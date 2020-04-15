@@ -117,7 +117,7 @@ public class TailorMyJourney extends TestBase {
 		// click next button
 		click("nextBtn_XPATH");
 
-		// Click next button without selecting transport
+/*		// Click next button without selecting transport
 		click("nextBtn_XPATH");
 
 		// Verify message prompting to select transport
@@ -128,7 +128,7 @@ public class TailorMyJourney extends TestBase {
 		click("transport_XPATH");
 
 		// Click next button
-		click("nextBtn_XPATH");
+		click("nextBtn_XPATH");*/
 
 		// Verify welcome name is equal the the first name entered at the beginning
 		verifyEqualsIgnoreCase(firstname, driver.findElement(By.xpath(OR.getProperty("welcomeName_XPATH"))).getText());
@@ -302,16 +302,17 @@ public class TailorMyJourney extends TestBase {
 		click("nextBtn_XPATH");
 		click("accommodation_XPATH");
 		click("nextBtn_XPATH");
-		click("transport_XPATH");
-		click("nextBtn_XPATH");
+	//	click("transport_XPATH");
+	//	click("nextBtn_XPATH");
 		// Keep last name field as blank
 		// type("lastName_XPATH", lastname);
 		select("ageSelect_XPATH", age);
 		driver.findElement(By.xpath("//input[@type='email']")).sendKeys(email);
 		type("phone_XPATH", phone);
 		// Picking a date from the calender by selecting the calender option
-		click("calender_XPATH");
-		click("calenderDate_XPATH");
+	//	click("calender_XPATH");
+	//	click("calenderDate_XPATH");
+		click("iamnotsure_XPATH");
 		type("lengthOfTrip_XPATH", lengthofthetrip);
 		type("occupation_XPATH", occupation);
 		select("adults_XPATH", adultscount);

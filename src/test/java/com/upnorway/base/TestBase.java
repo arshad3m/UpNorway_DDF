@@ -136,7 +136,10 @@ public class TestBase {
 
 				// System.setProperty("webdriver.chrome.driver","\\src\\test\\resources\\executables\\chromedriver.exe");
 
-				driver = new ChromeDriver();
+				ChromeOptions options = new ChromeOptions(); 
+				options.addArguments("--headless", "--disable-gpu", "--ignore-certificate-errors", "--window-size=1920,1200"); 
+				
+				driver = new ChromeDriver(options);
 
 				log.debug("Chrome Launched !!!");
 			} else if (config.getProperty("browser").equals("ie")) {

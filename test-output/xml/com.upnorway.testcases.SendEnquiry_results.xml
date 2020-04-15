@@ -4,11 +4,11 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="20.496">
+           time="12.181">
   <properties />
   
   
-            <testcase name="send_Enquiry" time="14.924" classname="com.upnorway.testcases.SendEnquiry" />
-                <testcase name="sendEnquiryWithoutMandatoryFields" time="5.572" classname="com.upnorway.testcases.SendEnquiry" />
+            <testcase name="send_Enquiry" time="9.267" classname="com.upnorway.testcases.SendEnquiry" />
+                <testcase name="sendEnquiryWithoutMandatoryFields" time="2.914" classname="com.upnorway.testcases.SendEnquiry" />
       
 </testsuite>

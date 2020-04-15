@@ -4,11 +4,11 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="40.616">
+           time="48.306">
   <properties />
   
   
-            <testcase name="about_getStarted" time="13.744" classname="com.upnorway.testcases.About" />
-                <testcase name="about_JourneyTestimonials" time="26.872" classname="com.upnorway.testcases.About" />
+            <testcase name="about_JourneyTestimonials" time="27.004" classname="com.upnorway.testcases.About" />
+                <testcase name="about_getStarted" time="21.302" classname="com.upnorway.testcases.About" />
       
 </testsuite>

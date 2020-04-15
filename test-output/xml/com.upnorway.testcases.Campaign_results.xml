@@ -4,11 +4,11 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="86.335">
+           time="79.367">
   <properties />
   
   
-            <testcase name="campaign_enquireExperience" time="37.177" classname="com.upnorway.testcases.Campaign" />
-                <testcase name="campaign_goToJourney" time="49.158" classname="com.upnorway.testcases.Campaign" />
+            <testcase name="campaign_enquireExperience" time="35.601" classname="com.upnorway.testcases.Campaign" />
+                <testcase name="campaign_goToJourney" time="43.766" classname="com.upnorway.testcases.Campaign" />
       
 </testsuite>

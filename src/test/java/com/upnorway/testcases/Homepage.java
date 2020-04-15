@@ -140,7 +140,7 @@ public class Homepage extends TestBase {
 
 	}
 
-	@Test(enabled = true)
+	@Test(enabled = false) //disabling because test case takes 15 mins to finish execution
 	public void googleReviewfiveStars() throws InterruptedException, IOException {
 
 		// Get the count of displayed

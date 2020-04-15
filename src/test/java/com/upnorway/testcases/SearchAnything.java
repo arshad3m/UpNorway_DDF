@@ -36,6 +36,8 @@ public class SearchAnything extends TestBase {
 			type("search_XPATH", keyword_for_many);
 
 		}
+		
+		 Thread.sleep(10000);
 
 		// Click on the fourth page
 
@@ -82,7 +84,7 @@ public class SearchAnything extends TestBase {
 
 		}
 
-		// Thread.sleep(2000);
+		 Thread.sleep(10000);
 
 		// verify less than 4 results are shown
 		List<WebElement> list = driver.findElements(By.xpath(OR.getProperty("card_bucket_XPATH")));

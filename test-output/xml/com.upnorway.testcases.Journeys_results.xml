@@ -4,15 +4,15 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="231.569">
+           time="180.466">
   <properties />
   
   
-            <testcase name="currencyTypes_price" time="46.869" classname="com.upnorway.testcases.Journeys" />
-                <testcase name="journey_enquire" time="90.980" classname="com.upnorway.testcases.Journeys" />
-                <testcase name="search_journeys" time="39.803" classname="com.upnorway.testcases.Journeys" />
-                <testcase name="journey_magicMap" time="24.383" classname="com.upnorway.testcases.Journeys" />
-                <testcase name="journey_getStarted" time="8.713" classname="com.upnorway.testcases.Journeys" />
-                <testcase name="validateCountsAfterFiltering" time="20.821" classname="com.upnorway.testcases.Journeys" />
+            <testcase name="journey_magicMap" time="9.723" classname="com.upnorway.testcases.Journeys" />
+                <testcase name="journey_getStarted" time="15.099" classname="com.upnorway.testcases.Journeys" />
+                <testcase name="search_journeys" time="22.066" classname="com.upnorway.testcases.Journeys" />
+                <testcase name="validateCountsAfterFiltering" time="15.346" classname="com.upnorway.testcases.Journeys" />
+                <testcase name="currencyTypes_price" time="39.830" classname="com.upnorway.testcases.Journeys" />
+                <testcase name="journey_enquire" time="78.402" classname="com.upnorway.testcases.Journeys" />
       
 </testsuite>

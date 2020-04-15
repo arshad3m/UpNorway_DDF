@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <parameter name="occupation" value="Enterprenuer"/>
-  <parameter name="campaignJourney" value="the classic discovery route"/>
+  <parameter name="campaignJourney" value="the upscaled discovery route"/>
   <parameter name="GooglereviewCount" value="36"/>
   <parameter name="videoExperience" value="FROM GLASS TO GRASS: URBAN GREEN OSLO"/>
   <parameter name="TestimonialTitle" value="TESTIMONIALS"/>
@@ -89,7 +89,7 @@
   </test> <!-- Home page -->
   <test name="Journeys">
     <parameter name="expkeyword1" value="farm"/>
-    <parameter name="campaignJourney" value="the classic discovery route"/>
+    <parameter name="campaignJourney" value="the upscaled discovery route"/>
     <parameter name="keyword3" value="cross"/>
     <parameter name="videoExperience" value="FROM GLASS TO GRASS: URBAN GREEN OSLO"/>
     <parameter name="keyword4" value="a"/>
@@ -127,77 +127,4 @@
       <class name="com.upnorway.testcases.Testimonials"/>
     </classes>
   </test> <!-- Journeys -->
-  <test name="Home page(failed)">
-    <parameter name="firstname" value="Donald"/>
-    <parameter name="occupation" value="Enterprenuer"/>
-    <parameter name="adultscount" value="9"/>
-    <parameter name="GooglereviewCount" value="36"/>
-    <parameter name="verifyTextContactInfo" value="Please fill out all the required fields."/>
-    <parameter name="PressItemTitle" value="AS SEEN IN PRESS"/>
-    <parameter name="enquireErrorMessage" value="Please fill all the required fields"/>
-    <parameter name="verifyText" value="A new era of travel curation"/>
-    <parameter name="message" value="I would love to travel Norway"/>
-    <parameter name="lastname" value="Trump"/>
-    <parameter name="arrivaldate" value="31st of December 2030"/>
-    <parameter name="keyword_for_many" value="summer"/>
-    <parameter name="keyword_invalid" value="abcdxyg987"/>
-    <parameter name="GoogleReviewPage" value="Up Norway"/>
-    <parameter name="travellingfrom" value="United States of America"/>
-    <parameter name="phone" value="0097444667"/>
-    <parameter name="GoogleReviewTitle" value="GOOGLE REVIEWS"/>
-    <parameter name="lengthofthetrip" value="4"/>
-    <parameter name="age" value="44 years young"/>
-    <parameter name="email" value="dana@ufc.com"/>
-    <parameter name="keyword_for_less" value="drifting"/>
-    <classes>
-      <class name="com.upnorway.testcases.SearchAnything">
-        <methods>
-          <include name="search_for_less" invocation-numbers="0"/>
-          <include name="beforeTest"/>
-          <include name="navigate_Pagination" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- com.upnorway.testcases.SearchAnything -->
-      <class name="com.upnorway.testcases.TailorMyJourney">
-        <methods>
-          <include name="testTailorMyJourneyContactInfoValidating" invocation-numbers="0"/>
-          <include name="beforeTest"/>
-          <include name="tailorMyJourney_ValidationCheck" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- com.upnorway.testcases.TailorMyJourney -->
-      <class name="com.upnorway.testcases.Homepage">
-        <methods>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- com.upnorway.testcases.Homepage -->
-      <class name="com.upnorway.testcases.Testimonials">
-        <methods>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- com.upnorway.testcases.Testimonials -->
-      <class name="com.upnorway.testcases.SendEnquiry">
-        <methods>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- com.upnorway.testcases.SendEnquiry -->
-      <class name="com.upnorway.testcases.About">
-        <methods>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- com.upnorway.testcases.About -->
-      <class name="com.upnorway.testcases.Campaign">
-        <methods>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- com.upnorway.testcases.Campaign -->
-      <class name="com.upnorway.testcases.Journeys">
-        <methods>
-          <include name="afterTest"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- com.upnorway.testcases.Journeys -->
-    </classes>
-  </test> <!-- Home page(failed) -->
 </suite> <!-- Failed suite [Suite] -->
